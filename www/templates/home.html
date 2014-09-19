@@ -1,0 +1,54 @@
+<ion-view title="Inklusik">
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <button class="button button-block button-positive" type="submit" ng-click="logout()">Logout</button>
+
+    <div class="list card">
+
+      <div class="item">
+        <h2>Angklung</h2>
+      </div>
+
+      <div class="item item-body">
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('da')">da</button>
+        </div>
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('mi')">mi</button>
+        </div>
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('na')">na</button>
+        </div>
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('ti')">ti</button>
+        </div>
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('la')">la</button>
+        </div>
+        <div>
+          <button class="button button-block button-positive" type="submit" ng-click="sound('da2')">da2</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="list card" ng-repeat="instrument in instruments">
+
+      <div class="item item-avatar">
+        <img ng-src="{{instrument.image}}">
+        <a href="#/instrument/{{instrument.id}}"><h2>{{instrument.name}}</h2></a>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-src="{{instrument.cover}}">
+        <p>
+          {{instrument.short_description}}
+        </p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
