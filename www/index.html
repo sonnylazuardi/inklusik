@@ -40,9 +40,28 @@
   </head>
 
   <body ng-app="inklusik">
-    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-      <!-- <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button> -->
-    </ion-nav-bar>
-    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+    <div ng-hide-auth> 
+      <div ng-controller="LoginCtrl" class="modal">
+        <div ng-include="'templates/login.html'"></div>
+      </div>
+    </div>
+
+    <ion-side-menus>
+      <!-- Center content -->
+      <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+          <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view animation="slide-left-right"></ion-nav-view>
+      </ion-side-menu-content>
+
+      <!-- Left menu -->
+      <ion-side-menu side="left">
+      sesuatu
+      </ion-side-menu>
+    </ion-side-menus>
+    
   </body>
 </html>

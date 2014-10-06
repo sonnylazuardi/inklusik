@@ -1,44 +1,23 @@
 angular.module('inklusik.controllers', [])
 
-.controller('HomeCtrl', function($scope, simpleLogin, ngAudio, fbutil, $cordovaMedia) {
+.controller('PlayCtrl', function($scope, simpleLogin, fbutil, Player) {
   $scope.logout = function() {
     simpleLogin.logout();
   }
   $scope.sound = {};
-  $scope.harmony = fbutil.syncArray(['harmony'], {limit: 10});
   $scope.last_melody = fbutil.syncArray(['harmony'], {limit: 1});
-  var app = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;
+
   $scope.last_melody.$watch(function(event) {
-    console.log(event);
+    // console.log(event);
     var melody = $scope.last_melody[0];
     if (melody) {
       console.log(melody.$value);
-      ngAudio.play("sound/sunda/angklung/"+melody.$value+".mp3");
-      if (app) {
-        var src = "/android_asset/www/sound/sunda/angklung/"+melody.$value+".mp3";
-
-        var mediaSource = $cordovaMedia.newMedia(src);
-        var promise = mediaSource.promise;
-        var mediaStatus = mediaSource.mediaStatus;
-        var media = mediaSource.media;
-
-        $cordovaMedia.play(media);
-      }
+      Player(melody.$value);
     }
   });
   $scope.sound = function(melody) {
-    ngAudio.play("sound/sunda/angklung/"+melody+".mp3");
-    if (app) {
-      var src = "/android_asset/www/sound/sunda/angklung/"+melody+".mp3";
-
-      var mediaSource = $cordovaMedia.newMedia(src);
-      var promise = mediaSource.promise;
-      var mediaStatus = mediaSource.mediaStatus;
-      var media = mediaSource.media;
-
-      $cordovaMedia.play(media);
-    }
-    $scope.harmony.$add(melody);
+    Player(melody);
+    $scope.last_melody.$add(melody);
   }
 })
 
@@ -49,7 +28,7 @@ angular.module('inklusik.controllers', [])
       .then(function( user ) {
         console.log(user);
         createProfile(user.uid, user.displayName, user.thirdPartyUserData.picture.data.url, 0).then(function() {
-          $location.path('/home');
+          $location.path('/play');
         });
       }, function(err) {
         $scope.err = errMessage(err);
@@ -59,7 +38,7 @@ angular.module('inklusik.controllers', [])
     $scope.err = null;
       simpleLogin.login()
       .then(function() {
-        $location.path('/home');
+        $location.path('/play');
       }, function(err) {
         $scope.err = errMessage(err);
       });

@@ -5,14 +5,13 @@ angular.module('inklusik.routes', ['ui.router', 'simpleLogin'])
   .constant('ROUTES', {
     '/login': {
       url: "/login",
-      templateUrl: "templates/login.html",
       controller: 'LoginCtrl'
     },
-    '/home': {
-      url: "/home",
-      templateUrl: "templates/home.html",
-      controller: 'HomeCtrl',
-      authRequired: true, // must authenticate before viewing this page
+    '/play': {
+      url: "/play",
+      templateUrl: "templates/play.html",
+      controller: 'PlayCtrl',
+      authRequired: true // must authenticate before viewing this page
     }
   })
   
