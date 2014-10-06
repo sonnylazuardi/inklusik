@@ -11,8 +11,27 @@ angular.module('inklusik.routes', ['ui.router', 'simpleLogin'])
     '/home': {
       url: "/home",
       templateUrl: "templates/home.html",
-      controller: 'HomeCtrl',
-      authRequired: true, // must authenticate before viewing this page
+      controller: 'HomeCtrl'// must authenticate before viewing this page
+    },
+    '/wiki':{
+      url: "/wiki",
+      templateUrl: "templates/wiki.html",
+      controller: 'WikiCtrl'
+    },
+    '/wikimore':{
+      url:"/wikimore",
+      templateUrl: "templates/wikimore.html",
+      controller: 'WikimoreCtrl'
+    },
+    '/detail':{
+      url: "/detail",
+      templateUrl: "templates/detail.html",
+      controller: 'DetailCtrl'
+    },
+    '/play':{
+      url: "/play",
+      templateUrl: "templates/play.html",
+      controller: "PlayCtrl"
     }
   })
   
