@@ -7,11 +7,38 @@ angular.module('inklusik.routes', ['ui.router', 'simpleLogin'])
       url: "/login",
       controller: 'LoginCtrl'
     },
+<<<<<<< HEAD
     '/play': {
       url: "/play",
       templateUrl: "templates/play.html",
       controller: 'PlayCtrl',
       authRequired: true // must authenticate before viewing this page
+=======
+    '/home': {
+      url: "/home",
+      templateUrl: "templates/home.html",
+      controller: 'HomeCtrl'// must authenticate before viewing this page
+    },
+    '/wiki':{
+      url: "/wiki",
+      templateUrl: "templates/wiki.html",
+      controller: 'WikiCtrl'
+    },
+    '/wikimore':{
+      url:"/wikimore",
+      templateUrl: "templates/wikimore.html",
+      controller: 'WikimoreCtrl'
+    },
+    '/detail':{
+      url: "/detail",
+      templateUrl: "templates/detail.html",
+      controller: 'DetailCtrl'
+    },
+    '/play':{
+      url: "/play",
+      templateUrl: "templates/play.html",
+      controller: "PlayCtrl"
+>>>>>>> eb0e7e12ee354684d712de8bfd30a4c98950d47d
     }
   })
   
