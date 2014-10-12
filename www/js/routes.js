@@ -1,45 +1,42 @@
-"use strict";
-
-angular.module('inklusik.routes', ['ui.router', 'simpleLogin'])
+angular.module('inklusik.routes', ['simpleLogin'])
 
   .constant('ROUTES', {
-    '/login': {
+    'login': {
       url: "/login",
-      controller: 'LoginCtrl'
+      controller: 'LoginCtrl',
+      animation: 'slide-in-up'
     },
-<<<<<<< HEAD
-    '/play': {
-      url: "/play",
+    'play': {
+      url: "/play/:name",
       templateUrl: "templates/play.html",
       controller: 'PlayCtrl',
       authRequired: true // must authenticate before viewing this page
-=======
-    '/home': {
-      url: "/home",
-      templateUrl: "templates/home.html",
-      controller: 'HomeCtrl'// must authenticate before viewing this page
     },
-    '/wiki':{
-      url: "/wiki",
-      templateUrl: "templates/wiki.html",
-      controller: 'WikiCtrl'
+    'play/guest': {
+      url: "/guestplay/:name",
+      templateUrl: "templates/play.html",
+      controller: 'PlayGuestCtrl',
     },
-    '/wikimore':{
-      url:"/wikimore",
-      templateUrl: "templates/wikimore.html",
-      controller: 'WikimoreCtrl'
+    'browse':{
+      url: "/browse",
+      templateUrl: "templates/browse.html",
+      controller: 'BrowseCtrl'
     },
-    '/detail':{
-      url: "/detail",
+    'detail':{
+      url: "/detail/:name",
       templateUrl: "templates/detail.html",
       controller: 'DetailCtrl'
     },
-    '/play':{
-      url: "/play",
-      templateUrl: "templates/play.html",
-      controller: "PlayCtrl"
->>>>>>> eb0e7e12ee354684d712de8bfd30a4c98950d47d
-    }
+    'about':{
+      url: "/about",
+      templateUrl: "templates/about.html",
+      controller: 'AboutCtrl'
+    },
+    'help':{
+      url: "/help",
+      templateUrl: "templates/help.html",
+      controller: 'AboutCtrl'
+    },
   })
   
   .config(function($stateProvider) {
@@ -62,7 +59,7 @@ angular.module('inklusik.routes', ['ui.router', 'simpleLogin'])
       }
     });
     // routes which are not in our map are redirected to /home
-    $urlRouterProvider.otherwise('/login');
+    $urlRouterProvider.otherwise('/browse');
   })
 
   .run(function($rootScope, $location, simpleLogin, ROUTES, loginRedirectPath) {

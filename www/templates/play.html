@@ -1,144 +1,30 @@
-<<<<<<< HEAD
-<ion-view title="Inklusik">
-  <ion-content>
-    <ion-refresher
-      pulling-text="Pull to refresh..."
-      on-refresh="doRefresh()">
-    </ion-refresher>
-    <button class="button button-block button-positive" type="submit" ng-click="logout()">Logout</button>
-
-    <div class="list card">
-
-      <div class="item">
-        <h2>Angklung</h2>
-      </div>
-
-      <div class="item item-body">
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('da')">da</button>
-        </div>
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('mi')">mi</button>
-        </div>
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('na')">na</button>
-        </div>
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('ti')">ti</button>
-        </div>
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('la')">la</button>
-        </div>
-        <div>
-          <button class="button button-block button-positive" type="submit" ng-click="sound('da2')">da2</button>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="list card" ng-repeat="instrument in instruments">
-
-      <div class="item item-avatar">
-        <img ng-src="{{instrument.image}}">
-        <a href="#/instrument/{{instrument.id}}"><h2>{{instrument.name}}</h2></a>
-      </div>
-
-      <div class="item item-body">
-        <img class="full-image" ng-src="{{instrument.cover}}">
-        <p>
-          {{instrument.short_description}}
-        </p>
-      </div>
-
-=======
-<ion-view title="Music Wiki">
+<ion-view title="PLAY {{instrument.name.toUpperCase()}}">
   <ion-content>
     <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
-      <div class="item item-image">
-        <img src="img/header-angklung.png">
+      <div class="item item-image" style="background: url('img/{{instrument.imagecover}}'); background-size: cover; background-position: center center; height: 200px">
+        <div class="icon-music" style="background: url('img/{{instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 140px; width: 140px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); margin: 30px auto;">
+        </div>
       </div>
       <div class="item">
-        <div style="text-align:center"> Shake to Play </div>
+        <div style="text-align:center"> Tap to Play </div>
         <div class="row">
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
-            </button></a>
-          </div>
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
-            </button></a>
-          </div>
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
-            </button></a>
-          </div>
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
-            </button></a>
-          </div>
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
-            </button></a>
-          </div>
-          <div class="col">
-            <a href="#/wikimore"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;"  class="button button-energized">
-              <strong>DO</strong>
+          <div class="col" ng-repeat="melody in instrument.melody">
+            <a href ng-click="sound(melody)"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;" class="button button-energized">
+              <strong>{{melody.toUpperCase()}}</strong>
             </button></a>
           </div>
         </div>
-        
       </div>
     </div>
     <div class="row">
-      <h5 style="margin:5px">Other player(s) in this room</h5>
+      <h5 style="margin:5px">Friends</h5>
     </div>
-    <div class="row">
-      <div class="col">
-          <a style="text-decoration: none;" href="#/detail"><div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
-            <div class="item item-image">
-                <img src="img/circle.png">
-              </div>
-            <div class="item item-text-wrap">
-              <h3 style="text-align:center"><strong>Gangsa</strong></h3>
-              <p style="text-align:center"> Alat Ketuk </p>
-            </div>
-          </div></a>
-      </div>
-      <div class="col">
-          <a style="text-decoration: none;" href="#/detail"><div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
-            <div class="item item-image">
-                <img src="img/circle.png">
-              </div>
-            <div class="item item-text-wrap">
-              <h3 style="text-align:center"><strong>Gangsa</strong></h3>
-              <p style="text-align:center"> Alat Ketuk </p>
-            </div>
-          </div></a>
-      </div>
-      <div class="col">
-          <a style="text-decoration: none;" href="#/detail"><div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
-            <div class="item item-image">
-                <img src="img/circle.png">
-              </div>
-            <div class="item item-text-wrap">
-              <h3 style="text-align:center"><strong>Gangsa</strong></h3>
-              <p style="text-align:center"> Alat Ketuk </p>
-            </div>
-          </div></a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a href="#/wikimore"> <button style="float:right; background:#57ba47; width:100px; color:#fff"  class="button button-light ">
-          Invite
-        </button></a>
-      </div>
->>>>>>> eb0e7e12ee354684d712de8bfd30a4c98950d47d
+    <div class="item item-avatar" ng-repeat="user in onlineusers">
+        <img ng-src="{{user.avatar}}">
+        <h2>{{user.name}}</h2>
+        <p>{{user.instrument.name}} </p>
+        <div class="icon-music" style="background: url('img/{{user.instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 40px; width: 40px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); position: absolute; right: 15px; top: 15px">
+        </div>
     </div>
   </ion-content>
 </ion-view>

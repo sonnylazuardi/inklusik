@@ -1,5 +1,3 @@
-'use strict';
-
 // Declare app level module which depends on filters, and services
 angular.module('inklusik.config', [])
    .constant('version', '0.1')

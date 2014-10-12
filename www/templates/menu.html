@@ -1,0 +1,14 @@
+<ion-content>
+<div class="list card">
+    <div class="item item-avatar">
+        <img ng-src="{{profile.avatar}}">
+        <h2>{{profile.name}}</h2>
+        <p><a ng-click="logout()" href menu-close>Logout</a></p>
+    </div>
+</div>
+<ul class="list">
+<a href="#/browse" class="item" menu-close>Browse</a>
+<a href="#/help" class="item" menu-close>Help</a>
+<a href="#/about" class="item" menu-close>About</a>
+</ul>
+</ion-content>

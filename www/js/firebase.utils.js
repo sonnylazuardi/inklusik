@@ -2,7 +2,6 @@
 // a simple wrapper on Firebase and AngularFire to simplify deps and keep things DRY
 angular.module('firebase.utils', ['firebase', 'inklusik.config'])
    .factory('fbutil', ['$window', 'FBURL', '$firebase', function($window, FBURL, $firebase) {
-      "use strict";
 
       return {
         syncObject: function(path, factoryConfig) {
