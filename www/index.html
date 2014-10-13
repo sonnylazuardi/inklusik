@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Inklusik</title>
 
     <link href="css/ionic.app.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
@@ -52,6 +52,10 @@
           <ion-nav-buttons side="left">
             <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
           </ion-nav-buttons>
+
+          <ion-nav-buttons side="right">
+            <button class="button button-icon icon ion-search"></button>
+          </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view animation="slide-left-right"></ion-nav-view>
       </ion-side-menu-content>
@@ -60,6 +64,8 @@
       <ion-side-menu side="left">
         <div ng-include="'templates/menu.html'" ng-controller="MenuCtrl"></div>
       </ion-side-menu>
+
+
     </ion-side-menus>
     
   </body>

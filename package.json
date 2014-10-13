@@ -1,7 +1,7 @@
 {
-  "name": "myapp",
+  "name": "Inklusik",
   "version": "1.0.0",
-  "description": "myApp: An Ionic project",
+  "description": "Applikasi permainan kolaboratif musik indonesia",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
