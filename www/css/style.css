@@ -98,3 +98,19 @@
 	padding:8px; 
 	text-align:center;
 }
+
+.item button {
+	height: 60px;
+	width: 60px;
+}
+
+button.button-fab-yellow {
+	background:#F8ED31;
+	border:0px;
+	color:#8A5D3B;
+	border-radius: 50%;
+}
+
+button.selected {
+	background: #57ba47 !important;
+}
