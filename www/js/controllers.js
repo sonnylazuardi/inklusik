@@ -53,6 +53,7 @@ angular.module('inklusik.controllers', [])
     threshold: 12,                                                 //how hard the shake has to be to register.
     success: function(magnitude, accelerationDelta, timestamp) {
       Player($scope.name, $scope.selected);   
+      $scope.harmony.$add({melody: $scope.selected, name: $scope.name, uid: $scope.profile.uid});
     }, //callback when shake is detected. "this" will be the "shake" object.
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
   });
