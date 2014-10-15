@@ -18,7 +18,6 @@ angular.module('inklusik.services', [])
     }
     return Player;
 })
-
 .factory('Instruments', function() {
     var self = this;
     self.instruments = [ {

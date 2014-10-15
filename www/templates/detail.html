@@ -8,14 +8,14 @@
       <div class="item">
         <div class="row">
           <div class="col">
-            <h3 style="text-align:center"><strong>{{instrument.name.toUpperCase()}}</strong></h3>
-            <p style="text-align:center"> Alat Musik Sunda </p>
+            <h2 style="text-align:center; font-family:roboto"><strong>{{instrument.name.toUpperCase()}}</strong></h2>
+            <p style="text-align:center; font-family: roboto"> Alat Musik Sunda </p>
           </div>
           <div>
-            <a href="#/play/{{instrument.name}}" ng-show-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized">
+            <a href="#/play/{{instrument.name}}" ng-show-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized; ">
               <strong>PLAY</strong>
             </button></a>
-            <a href="#/guestplay/{{instrument.name}}" ng-hide-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized">
+            <a href="#/guestplay/{{instrument.name}}" ng-hide-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized;">
               <strong>PLAY</strong>
             </button></a>
           </div>
@@ -27,9 +27,9 @@
       <div class="col">
           <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
             <div class="item item-text-wrap">
-              <h3 style="text-align:left"><strong>Description</strong></h3>
+              <h3 style="text-align:left;font-family:roboto"><strong>Description</strong></h3>
               <p style="text-align: justify;
-    text-justify: inter-word; padding: 20px">{{instrument.description}}</p>
+    text-justify: inter-word; padding: 20px;font-family:roboto-lt">{{instrument.description}}</p>
             <!-- <hr> -->
             <!-- <p style="text-align: center;">More</p> -->
             </div>

@@ -115,4 +115,8 @@ angular.module('inklusik.controllers', [])
 
 .controller('AboutCtrl', function($scope) {
   
+})
+
+.controller('SearchCtrl', function($scope){
+
 });
