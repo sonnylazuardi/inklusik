@@ -130,6 +130,7 @@ angular.module('inklusik.controllers', [])
 
 .controller('BrowseCtrl', function($scope, Instruments) {
   $scope.instruments = Instruments.instruments;
+  $scope.locations = [ 'sunda', 'jawa','bali','kalimantan','maluku','nusa','papua','sumatera',];
 })
 
 .controller('WikimoreCtrl', function($scope) {
