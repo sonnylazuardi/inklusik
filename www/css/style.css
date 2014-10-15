@@ -98,6 +98,13 @@
 	text-decoration:none;
 }
 
+.link-more {
+	font-family:roboto;
+	text-align:center;
+	color:#2284C6;
+	text-decoration:none;
+}
+
 .side-menu-options > a {
 	background-color:#5D5D5D;
 	color:#D1D2D4;
@@ -224,7 +231,7 @@ button.selected {
 
 .detail-card-item h3 {
 	text-align:left;
-	font-family:roboto
+	font-family:roboto;
 }
 
 .detail-card-item p{
@@ -244,3 +251,6 @@ button.selected {
   width: 50%;
 }
 
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin-top: 12px; margin-bottom:2px; padding: 0;}
