@@ -9,7 +9,7 @@
         <div style="text-align:center"> Tap to Play </div>
         <div class="row">
           <div class="col" ng-repeat="melody in instrument.melody">
-            <a href ng-click="sound(melody)"> <button style="background:#F8ED31; border:0px; color:#8A5D3B; border-radius: 50%;" class="button button-energized">
+            <a href ng-click="sound(melody)"> <button ng-class="{'button': true, 'button-fab-yellow': true, 'selected': (selected == melody)}">
               <strong>{{melody.toUpperCase()}}</strong>
             </button></a>
           </div>

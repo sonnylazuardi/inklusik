@@ -1,11 +1,12 @@
 angular.module('inklusik.controllers', [])
 
-.controller('PlayCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, requireUser) {
+.controller('PlayCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, requireUser, Shake) {
   var name = $stateParams.name;
+  $scope.name = name;
   $scope.instrument = Instruments.find(name);
   $scope.harmony = fbutil.syncArray(['harmony'], {limit: 10});
   $scope.last_melody = fbutil.syncArray(['harmony'], {limit: 1});
-
+  $scope.selected = '';
   requireUser().then(function(user) {
     var profile = fbutil.syncObject(['users', user.uid]);
     profile.$bindTo($scope, 'profile');
@@ -42,17 +43,41 @@ angular.module('inklusik.controllers', [])
     }
   });
   $scope.sound = function(melody) {
+    $scope.selected = melody;
     Player(name, melody);
     $scope.harmony.$add({melody: melody, name: name, uid: $scope.profile.uid});
   }
+  var shake = new Shake({
+    frequency: 300,                                                //milliseconds between polls for accelerometer data.
+    waitBetweenShakes: 1000,                                       //milliseconds to wait before watching for more shake events.
+    threshold: 12,                                                 //how hard the shake has to be to register.
+    success: function(magnitude, accelerationDelta, timestamp) {
+      Player($scope.name, $scope.selected);   
+    }, //callback when shake is detected. "this" will be the "shake" object.
+    failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
+  });
+  shake.startWatch();
 })
 
-.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments) {
+.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake) {
   var name = $stateParams.name;
+  $scope.name = name;
   $scope.instrument = Instruments.find(name);
+  $scope.selected = '';
   $scope.sound = function(melody) {
+    $scope.selected = melody;
     Player(name, melody);
   }
+  var shake = new Shake({
+    frequency: 300,                                                //milliseconds between polls for accelerometer data.
+    waitBetweenShakes: 1000,                                       //milliseconds to wait before watching for more shake events.
+    threshold: 12,                                                 //how hard the shake has to be to register.
+    success: function(magnitude, accelerationDelta, timestamp) {
+      Player($scope.name, $scope.selected);   
+    }, //callback when shake is detected. "this" will be the "shake" object.
+    failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
+  });
+  shake.startWatch();
 })
 
 .controller('LoginCtrl', function($scope, createProfile, simpleLogin, $state, $rootScope) {
@@ -97,6 +122,9 @@ angular.module('inklusik.controllers', [])
     console.log('keluar');
     $rootScope.hide = false;
     $state.go('login');
+  }
+  $scope.exit = function() {
+    navigator.app.exitApp();
   }
 })
 
