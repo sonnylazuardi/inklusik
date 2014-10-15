@@ -1,21 +1,21 @@
 <ion-view title="{{instrument.name.toUpperCase()}}">
   <ion-content>
-    <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
-      <div class="item item-image" style="background: url('img/{{instrument.imagecover}}'); background-size: cover; background-position: center center; height: 200px">
-        <div class="icon-music" style="background: url('img/{{instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 140px; width: 140px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); margin: 30px auto;">
+    <div class = "detail-card-head">
+      <div class="item item-image" style="background: url('img/{{instrument.imagecover}}'); background-size: cover; background-position: center center; ">
+        <div class="icon-music" style="background: url('img/{{instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center;  background-color: #fff; ">
         </div>
       </div>
       <div class="item">
         <div class="row">
           <div class="col">
-            <h3 style="text-align:center"><strong>{{instrument.name.toUpperCase()}}</strong></h3>
-            <p style="text-align:center"> Alat Musik Sunda </p>
+            <h2><strong>{{instrument.name.toUpperCase()}}</strong></h2>
+            <p> Alat Musik Sunda </p>
           </div>
           <div>
-            <a href="#/play/{{instrument.name}}" ng-show-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized">
+            <a href="#/play/{{instrument.name}}" ng-show-auth> <button class="button button-energized;">
               <strong>PLAY</strong>
             </button></a>
-            <a href="#/guestplay/{{instrument.name}}" ng-hide-auth> <button style="float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B"  class="button button-energized">
+            <a href="#/guestplay/{{instrument.name}}" ng-hide-auth> <button class="button button-energized;">
               <strong>PLAY</strong>
             </button></a>
           </div>
@@ -25,12 +25,11 @@
     </div>
     <div class="row">
       <div class="col">
-          <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
+          <div class="detail-card-item">
             <div class="item item-text-wrap">
               <h3 style="text-align:left"><strong>Description</strong></h3>
               <div ng-class="[expanded[0], 'accord']">
-                <p style="text-align: justify;
-    text-justify: inter-word; padding: 20px">{{instrument.description}}</p>
+                <div ng-bind-html="instrument.description"></div>
               </div>
             <hr>
             <p style="text-align: center;"><a href ng-click="expand(0)">More</a></p>
@@ -41,12 +40,11 @@
     </div>
     <div class="row">
       <div class="col">
-          <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
+          <div class="detail-card-item">
             <div class="item item-text-wrap">
               <h3 style="text-align:left"><strong>Story</strong></h3>
               <div ng-class="[expanded[1], 'accord']">
-                <p style="text-align: justify;
-    text-justify: inter-word; padding: 20px">{{instrument.story}}</p>
+                <div ng-bind-html='instrument.story'></div>
               </div>
             <hr>
             <p style="text-align: center;"><a href ng-click="expand(1)">More</a></p>
@@ -57,12 +55,11 @@
     </div>
     <div class="row">
       <div class="col">
-          <div style="box-shadow: 0px 5px 10px rgba(0,0,0,.1);">
+          <div class="detail-card-item">
             <div class="item item-text-wrap">
               <h3 style="text-align:left"><strong>How to play</strong></h3>
               <div ng-class="[expanded[2], 'accord']">
-                <p style="text-align: justify;
-    text-justify: inter-word; padding: 20px">{{instrument.howtoplay}}</p>
+                <div ng-bind-html='instrument.howtoplay'></div>
               </div>
            <hr>
             <p style="text-align: center;"><a href ng-click="expand(2)">More</a></p>

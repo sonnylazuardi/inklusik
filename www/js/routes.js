@@ -37,6 +37,11 @@ angular.module('inklusik.routes', ['simpleLogin'])
       templateUrl: "templates/help.html",
       controller: 'AboutCtrl'
     },
+    'search':{
+      url: "/search",
+      templateUrl: "templates/search.html",
+      controller: 'SearchCtrl'
+    }
   })
   
   .config(function($stateProvider) {

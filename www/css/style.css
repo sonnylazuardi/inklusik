@@ -1,5 +1,27 @@
 /* Empty. Add your own CSS if you like */
 
+/* font */
+@font-face {
+    font-family: roboto-lt;
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(../fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+
+.bar.bar-stable {
+	border-width: 0px;
+}
+
 .full-overlay {
     top:0;
     left:0;
@@ -61,13 +83,14 @@
 .profile-preview {
 	background-color:#3F3F3F;
 }
-
-.profile-picture {
+/*override*/
+.item-avatar > img:first-child {
 	border-radius:50%;
 }
 
 .profile-preview > h2{
 	color:#BBBDC0;
+	font-family: roboto-lt;
 }
 
 .link {
@@ -80,6 +103,7 @@
 	color:#D1D2D4;
 	border-width:0px;
 	padding-bottom: 3px;
+	font-family: roboto;
 }
 .side-menu-options > a > i {
 	color:#D1D2D4;
@@ -95,10 +119,42 @@
 .side-menu-footer > p {
 	color:#BBBDC0;
 	font-size:12px;
-	padding:8px; 
+	padding:8px;
 	text-align:center;
 }
 
+.category-title {
+	padding:15px;
+	padding-bottom: 5px;
+	margin-bottom:0px;
+	font-family: roboto-lt
+}
+
+.browse-card > a {
+	text-decoration: none;
+}
+
+.browse-card-img {
+	 height: 200px;
+}
+
+.browse-card-img > .icon-music {
+	height: 140px;
+	width: 140px;
+	border-radius:50%;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.4);
+	margin: 30px auto;
+}
+
+.browse-card-txt > h3 {
+	text-align:center;
+	font-family:roboto;
+}
+
+.browse-card-txt > p {
+	text-align:center;
+	font-family:roboto-lt;
+}
 .item button {
 	height: 60px;
 	width: 60px;
@@ -115,6 +171,7 @@ button.selected {
 	background: #57ba47 !important;
 }
 
+
 .short {
    height: 100px;
    overflow: hidden;
@@ -129,3 +186,61 @@ button.selected {
 .full {
 	
 }
+
+.bar.bar-stable .title{
+	font-family: roboto;
+}
+
+.detail-card-head {
+	box-shadow: 0px 5px 10px rgba(0,0,0,.1);
+}
+
+.detail-card-head > .item-image {
+	height: 200px;
+}
+
+.detail-card-head > .item-image > .icon-music {
+	border-radius:50%;
+	box-shadow: 0px 5px 10px rgba(0,0,0,.4);
+	margin: 30px auto;
+	height: 140px;
+	width: 140px;
+}
+
+.detail-card-head h2 {
+	text-align:center; font-family:roboto;
+}
+.detail-card-head p {
+	text-align:center; font-family: roboto;
+}
+
+.detail-card-head button {
+	float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B
+}
+
+.detail-card-item {
+	box-shadow: 0px 5px 10px rgba(0,0,0,.1);
+}
+
+.detail-card-item h3 {
+	text-align:left;
+	font-family:roboto
+}
+
+.detail-card-item p{
+	text-align: justify;
+    text-justify: inter-word;
+    padding: 10px;
+    font-family:roboto-lt;
+    padding-bottom:0px;
+}
+
+.row.unlimited-items {
+  flex-wrap: wrap;
+}
+
+.row.unlimited-items .col{
+  flex: none;
+  width: 50%;
+}
+
