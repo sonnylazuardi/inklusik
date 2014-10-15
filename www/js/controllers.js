@@ -139,6 +139,14 @@ angular.module('inklusik.controllers', [])
 
 .controller('DetailCtrl', function($scope, Instruments, $stateParams) {
   $scope.instrument = Instruments.find($stateParams.name);
+  $scope.expanded = ['short', 'short', 'short'];
+  $scope.expand = function(id) {
+    if ($scope.expanded[id] == 'short') {
+      $scope.expanded[id] = 'full';
+    } else {
+      $scope.expanded[id] = 'short';
+    }
+  }
 
 })
 
