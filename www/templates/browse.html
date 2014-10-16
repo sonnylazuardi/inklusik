@@ -11,7 +11,7 @@
               </div>
               <div class="item item-text-wrap browse-card-txt">
                 <h3><strong>{{instrument.name.toUpperCase()}}</strong></h3>
-                <p>{{instrument.description.substr(0, 85)}}...</p>
+                <p>{{instrument.description|htmlToPlaintext|cut}}...</p>
               </div>
             </div></a>
         </div>

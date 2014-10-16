@@ -196,6 +196,6 @@ angular.module('inklusik.controllers', [])
   
 })
 
-.controller('SearchCtrl', function($scope){
-
+.controller('SearchCtrl', function($scope, Instruments){
+  $scope.instruments = Instruments.instruments;
 });

@@ -6,6 +6,18 @@ angular.module('inklusik.filters', [])
          return String(text).replace(/\%VERSION\%/mg, version);
       }
    }])
+   
+   .filter('htmlToPlaintext', function() {
+    return function(text) {
+      return String(text).replace(/<[^>]+>/gm, '');
+    }
+   })
+
+   .filter('cut', function() {
+    return function(text) {
+      return String(text).substr(0, 85);
+    }
+   })
 
    .filter('reverse', function() {
       function toArray(list) {
