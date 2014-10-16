@@ -141,9 +141,257 @@ angular.module('inklusik.services', [])
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "akom",
     story : "<p>Tidak ada petunjuk sejak kapan akom digunakan, tetapi diduga bentuk primitifnya telah digunakan dalam kultur Neolitikum yang berkembang di Nusantara sampai awal penanggalan modern, sehingga akom merupakan bagian dari relik pra-Hinduisme dalam kebudayaan Nusantara. Catatan mengenai akom baru muncul merujuk pada masa Kerajaan Sunda (abad ke-12 sampai abad ke-16).</p><p>Asal usul terciptanya musik bambu, seperti akom berdasarkan pandangan hidup masyarakat Sunda yang agraris dengan sumber kehidupan dari padi (pare) sebagai makanan pokoknya. Hal ini melahirkan mitos kepercayaan terhadap Nyai Sri Pohaci sebagai lambang Dewi Padi pemberi kehidupan (hirup-hurip). Masyarakat Baduy, yang dianggap sebagai sisa-sisa masyarakat Sunda asli, menerapkan akom sebagai bagian dari ritual mengawali penanaman padi.</p><p>Permainan akom gubrag di Jasinga, Bogor, adalah salah satu yang masih hidup sejak lebih dari 400 tahun lampau. Kemunculannya berawal dari ritus padi. akom diciptakan dan dimainkan untuk memikat Dewi Sri turun ke bumi agar tanaman padi rakyat tumbuh subur. Jenis bambu yang biasa digunakan sebagai alat musik tersebut adalah bambu hitam (awi wulung) dan bambu putih (awi temen). Tiap nada (laras) dihasilkan dari bunyi tabung bambunya yang berbentuk bilah (wilahan) setiap ruas bambu dari ukuran kecil hingga besar.</p><p>Dikenal oleh masyarakat sunda sejak masa kerajaan Sunda, di antaranya sebagai penggugah semangat dalam pertempuran. Fungsi akom sebagai pemompa semangat rakyat masih terus terasa sampai pada masa penjajahan, itu sebabnya pemerintah Hindia Belanda sempat melarang masyarakat menggunakan akom, pelarangan itu sempat membuat popularitas akom menurun dan hanya dimainkan oleh anak- anak pada waktu itu.</p><p>Selanjutnya lagu-lagu persembahan terhadap Dewi Sri tersebut disertai dengan pengiring bunyi tabuh yang terbuat dari batang-batang bambu yang dikemas sederhana yang kemudian lahirlah struktur alat musik bambu yang kita kenal sekarang bernama akom. Demikian pula pada saat pesta panen dan seren taun dipersembahkan permainan akom. Terutama pada penyajian akom yang berkaitan dengan upacara padi, kesenian ini menjadi sebuah pertunjukan yang sifatnya arak-arakan atau helaran, bahkan di sebagian tempat menjadi iring-iringan Rengkong dan Dongdang serta Jampana (usungan pangan) dan sebagainya.</p><p>Dalam perkembangannya, akom berkembang dan menyebar ke seantero Jawa, lalu ke Kalimantan dan Sumatera. Pada 1908 tercatat sebuah misi kebudayaan dari Indonesia ke Thailand, antara lain ditandai penyerahan akom, lalu permainan musik bambu ini pun sempat menyebar di sana. Bahkan, sejak 1966, Udjo Ngalagena &mdash;tokoh akom yang mengembangkan teknik permainan berdasarkan laras-laras pelog, salendro, dan madenda&mdash; mulai mengajarkan bagaimana bermain akom kepada banyak orang dari berbagai komunitas.</p>"
+  }, {
+    // DARI SINI SAMPE KE BAWAH MASIH DUMMY DESCIPTION
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "gangsa-cover.jpg",
+    location : "bali",
+    melody : [ "dang", "deng", "ding", "dong", "dung" ],
+    name : "gangsa",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "gong-cover.jpg",
+    location : "bali",
+    melody : [ "besar", "sedang", "kecil"],
+    name : "gong",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "kethuk-cover.jpg",
+    location : "bali",
+    melody : [ "dang", "deng", "ding" , "dong" , "dung"],
+    name : "kethuk",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "ugal-cover.jpg",
+    location : "bali",
+    melody : [ "dang", "deng", "ding" , "dong" , "dung"],
+    name : "ugal",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "bonang-cover.jpg",
+    location : "jawa",
+    melody : [ "ji", "lu", "ma", "nem", "ro"],
+    name : "bonang",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "gender-cover.jpg",
+    location : "jawa",
+    melody : [ "ji", "lu", "ma", "nem", "ro"],
+    name : "gender",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "kendhang-cover.jpg",
+    location : "jawa",
+    melody : [ "dang", "dlang", "lung", "nem", "ro"],
+    name : "kendhang",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "saronpanembung-cover.jpg",
+    location : "jawa",
+    melody : [ "ji", "lu", "ma", "nem", "ro"],
+    name : "saron panembung",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "saronpanerus-cover.jpg",
+    location : "jawa",
+    melody : [ "ji", "lu", "ma", "nem", "ro"],
+    name : "saron panerus",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "genderang-cover.jpg",
+    location : "kalimantan",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "genderang",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "ohyan-cover.jpg",
+    location : "kalimantan",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "ohyan",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "kolintang-cover.jpg",
+    location : "maluku",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "kolintang",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "sulingmaluku-cover.jpg",
+    location : "maluku",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "suling maluku",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "sulingtoraja-cover.jpg",
+    location : "maluku",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "suling toraja",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "sasando-cover.jpg",
+    location : "nusa",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "sasando",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "tifa-cover.jpg",
+    location : "papua",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "tifa",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "rebana-cover.jpg",
+    location : "sumatera",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "rebana",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "saluang-cover.jpg",
+    location : "sumatera",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "saluang",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "serunai-cover.jpg",
+    location : "sumatera",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "serunai",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+  }, {
+    description : "<p>Kendang, kendhang, atau gendang adalah instrumen dalam <strong>gamelan Jawa Tengah</strong> yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih.</p><p>Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu<strong> kendhang kosek</strong>. Kendang kebanyakan dimainkan oleh para pemain gamelan profesional, yang sudah lama menyelami budaya Jawa. Kendang kebanyakan di mainkan sesuai naluri pengendang, sehingga bila dimainkan oleh satu orang denga orang lain maka akan berbeda nuansanya.</p>",
+    howtoplay : "<p>Secara umum, cara membunyikan ricikan kendhang adalah dengan dikebuk membrannya menggunakan telapak tangan atau jari jari tangan kanan dan kiri.</p>",
+    image : "placeholder.jpg",
+    imagecover: "talempong-cover.jpg",
+    location : "sumatera",
+    melody : [ "da", "da2", "la", "mi", "na", "ti"],
+    name : "talempong",
+    story : "<p>Menurut bukti sejarah, kelompok membranofon telah populer di Jawa sejak pertengahan abad ke-9 Masehi dengan nama: padahi, pataha (padaha), murawaatau muraba, mrdangga, mrdala, muraja, panawa, kahala, damaru, kendang. Istilah ‘padahi’ tertua dapat dijumpai pada prasasti Kuburan Candi yang berangka tahun 821 Masehi (Goris, 1930). Seperti yang tertulis pada kitab Nagarakrtagama gubahan Mpu Prapanca tahun 1365 Masehi (Pigeaud, 1960), istilah tersebut terus digunakan sampai dengan jaman Majapahit.</p>"
+
   } ];
     self.find = function(name) {
         return _.findWhere(self.instruments, {name : name});
     }
     return self;
+})
+
+.factory('Flickr', function($resource, $q) {
+  var photosPublic = $resource('http://api.flickr.com/services/feeds/photos_public.gne', 
+      { format: 'json', jsoncallback: 'JSON_CALLBACK' }, 
+      { 'load': { 'method': 'JSONP' } });
+      
+  return {
+    search: function(query) {
+      var q = $q.defer();
+      photosPublic.load({
+        tags: query
+      }, function(resp) {
+        q.resolve(resp);
+      }, function(err) {
+        q.reject(err);
+      })
+      
+      return q.promise;
+    }
+  }
+})
+
+.controller('FlickrCtrl', function($scope, Flickr) {
+
+  var doSearch = ionic.debounce(function(query) {
+    Flickr.search(query).then(function(resp) {
+      $scope.photos = resp;
+    });
+  }, 500);
+  
+  $scope.search = function() {
+    doSearch($scope.query);
+  }
+
+})
+
+.directive('pushSearch', function() {
+  return {
+    restrict: 'A',
+    link: function($scope, $element, $attr) {
+      var amt, st, header;
+
+      $element.bind('scroll', function(e) {
+        if(!header) {
+          header = document.getElementById('search-bar');
+        }
+        st = e.detail.scrollTop;
+        if(st < 0) {
+          header.style.webkitTransform = 'translate3d(0, 0px, 0)';
+        } else {
+          header.style.webkitTransform = 'translate3d(0, ' + -st + 'px, 0)';
+        }
+      });
+    }
+  }
+})
+
+.directive('photo', function($window) {
+  return {
+    restrict: 'C',
+    link: function($scope, $element, $attr) {
+      var size = ($window.outerWidth / 3) - 2;
+      $element.css('width', size + 'px');
+    }
+  }
 });
