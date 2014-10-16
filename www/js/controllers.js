@@ -58,13 +58,17 @@ angular.module('inklusik.controllers', [])
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
   });
   shake.startWatch();
+  $scope.$on('$destroy', function() {
+    shake.stopWatch();
+  });
 })
 
-.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake) {
+.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval) {
   var name = $stateParams.name;
   $scope.name = name;
   $scope.instrument = Instruments.find(name);
   $scope.selected = '';
+  $scope.time = 0;
   $scope.sound = function(melody) {
     $scope.selected = melody;
     Player(name, melody);
@@ -79,6 +83,43 @@ angular.module('inklusik.controllers', [])
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
   });
   shake.startWatch();
+  $scope.$on('$destroy', function() {
+    shake.stopWatch();
+  });
+
+  //Partitiur
+  $scope.usingPartitur = false;
+  $scope.partiturs = Partiturs.partiturs;
+  $scope.currentSong = {melody: [], title: 'Song', source: '-'}
+  $scope.doTimer = function() {
+    $scope.time++;
+    if ($scope.time > 60) {
+      $scope.time = 0;
+    }
+  };
+  var timer;
+  $scope.resume = function() {
+    if ( angular.isDefined(timer) ) return;
+    timer = $interval($scope.doTimer, 750);
+  };
+
+  $scope.pause = function() {
+    if (angular.isDefined(timer)) {
+      $interval.cancel(timer);
+      timer = undefined;
+    }
+  }
+
+  $scope.changeSong = function() {
+    $scope.time = 0;
+    $scope.resume();
+  };
+
+  $scope.switch = function() {
+    $scope.usingPartitur = !$scope.usingPartitur;
+
+  }
+
 })
 
 .controller('LoginCtrl', function($scope, createProfile, simpleLogin, $state, $rootScope) {
