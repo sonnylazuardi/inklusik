@@ -40,7 +40,7 @@ angular.module('inklusik.routes', ['simpleLogin'])
     'search':{
       url: "/search",
       templateUrl: "templates/search.html",
-      controller: 'FlickrCtrl'
+      controller: 'SearchCtrl'
     }
   })
   

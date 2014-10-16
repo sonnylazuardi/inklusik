@@ -62,8 +62,9 @@
 	height: 100% !important;
 }
 
-.logo {
-	background: url('../img/logo_inklusik.png');
+.login-page .logo {
+	background: url('../img/logo_inklusik.png') no-repeat;
+    background-size: contain;
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;

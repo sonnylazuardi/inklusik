@@ -19,6 +19,12 @@ angular.module('inklusik.filters', [])
     }
    })
 
+   .filter('capitalize', function() {
+      return function(text) {
+         return String(text).replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+      }
+   })
+
    .filter('reverse', function() {
       function toArray(list) {
          var k, out = [];

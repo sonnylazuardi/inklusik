@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col">
             <h2><strong>{{instrument.name.toUpperCase()}}</strong></h2>
-            <p> Alat Musik Sunda </p>
+            <p> Alat Musik {{instrument.location | capitalize}} </p>
           </div>
           <div>
             <a href="#/play/{{instrument.name}}" ng-show-auth> <button class="button button-energized;">
