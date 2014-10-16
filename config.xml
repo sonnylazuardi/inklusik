@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.inklusik.app" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.inklusik.inklusik" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Inklusik</name>
   <description>
     Kolaborasi Musik Tradisional Indonesia
   </description>
   <author email="sonnylazuardi@gmail.com" href="http://sonnylab.com/">
-    Inklusik Team
+    Inkusik Developer Team
   </author>
   <content src="index.html"/>
   <access origin="*" />
