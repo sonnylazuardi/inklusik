@@ -95,7 +95,7 @@
 }
 
 .link {
-	color:#2284C6;
+	color:#FFFFFF;
 	text-decoration:none;
 }
 
@@ -223,7 +223,12 @@ button.selected {
 }
 
 .detail-card-head button {
-	float:right; background:#F8ED31; width:100px; border:0px; color:#8A5D3B
+	float:right; 
+	background:#F8ED31; 
+	width:100px; 
+	border:0px; 
+	color:#8A5D3B;
+	height:20px;
 }
 
 .detail-card-item {
@@ -239,7 +244,7 @@ button.selected {
 	text-align: justify;
     text-justify: inter-word;
     padding: 10px;
-    font-family:roboto-lt;
+    font-family:roboto;
     padding-bottom:0px;
 }
 
@@ -312,3 +317,35 @@ button.selected {
 hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin-top: 12px; margin-bottom:2px; padding: 0;}
+
+.logo-bar {
+	background :url('../img/icon.png') no-repeat;
+	width : 30px;
+	height : 30px;
+	display :inline-block;
+	background-size:contain;
+}
+
+.bar-stable .button.left-nav-icon {
+	margin-left:-20px;
+	padding-left:0px;
+	margin-right:0px;
+	padding-right:2px;
+}
+
+.bar .title {
+	text-align:left;
+	left:40px !important;
+}
+
+.pane {
+	background-color:#FDFDFD;
+}
+
+.item {
+	border-width:0px;
+}
+
+.item-head {
+	padding:10px;
+}
