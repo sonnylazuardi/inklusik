@@ -12,7 +12,7 @@ angular.module('inklusik.services', [])
                 function() { my_media.stop(); my_media.release();}); 
             my_media.play();
         } else {
-            console.log("sound/sunda/"+name+"/"+url+".mp3");
+            // console.log("sound/sunda/"+name+"/"+url+".mp3");
             ngAudio.play("sound/sunda/"+name+"/"+url+".mp3");
         }
     }
@@ -113,6 +113,15 @@ angular.module('inklusik.services', [])
       source: 'Jawa Tengah',
       melody: [
         'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    },
+    {
+      id: 2,
+      title: 'Suling Sunda',
+      source: 'Jawa Barat',
+      melody: [
+        'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', 'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 
       ],
       tick: '4/4',
     }

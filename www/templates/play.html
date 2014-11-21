@@ -9,8 +9,8 @@
         <div style="text-align:center"> Tap to Play </div>
         <div class="row">
           <div class="col" ng-repeat="melody in instrument.melody">
-            <a href ng-click="sound(melody)"> <button ng-class="{'button': true, 'button-fab-yellow': true, 'selected': (selected == melody)}">
-              <strong>{{melody.toUpperCase()}}</strong>
+            <a href ng-mousedown="sound(melody)" ng-mouseenter="enter(melody)" ng-mouseup="stop()" ng-mouseleave="leave()" on-long-press="sound(melody)" on-touch-end="stop()"> <button ng-class="{'button': true, 'button-fab-yellow': true, 'selected': (selected == melody)}">
+              <strong>{{converter[melody.toLowerCase()]}}</strong>
             </button></a>
           </div>
         </div>
@@ -36,6 +36,7 @@
               {{currentSong.tick}}  
             </div>
             <div class="col col-40">
+              <a href class="button"><i class="fa fa-play"></i></a>
               <a href class="button" ng-click="pause()">Pause</a>
               <a href class="button" ng-click="resume()">Play</a>
             </div>
@@ -45,7 +46,7 @@
 
       <div class="row">
         <div class="board">
-            <div class="wrap" style="width: {{(currentSong.melody.length + 20) * 45}}px; left: -{{time*(45+20)}}px">
+            <div class="wrap" style="width: {{(currentSong.melody.length + 20) * 45}}px; left: -{{time*(45+20)*0.2}}px">
               <div ng-repeat="melo in currentSong.melody track by $index">
                 <div class="melo" style="left: {{($index*(45+20))+10*(45+20)}}px" ng-hide="melo == '0'">
                   {{melo}}
@@ -62,12 +63,15 @@
     <div class="row">
       <h5 style="margin:5px">Friends</h5>
     </div>
-    <div class="item item-avatar" ng-repeat="user in onlineusers">
-        <img ng-src="{{user.avatar}}">
-        <h2>{{user.name}}</h2>
-        <p>{{user.instrument.name}} </p>
-        <div class="icon-music" style="background: url('img/{{user.instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 40px; width: 40px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); position: absolute; right: 15px; top: 15px">
-        </div>
+    <div ng-repeat="user in onlineusers">
+      <div ng-class="{'item': true, 'item-avatar': true, 
+      'sounded': user.sounded}">
+          <img ng-src="{{user.avatar}}">
+          <h2>{{user.name}}</h2>
+          <p>{{user.instrument.name}} </p>
+          <div class="icon-music" style="background: url('img/{{user.instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 40px; width: 40px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); position: absolute; right: 15px; top: 15px">
+          </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
