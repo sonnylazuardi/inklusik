@@ -247,9 +247,18 @@ button.selected {
   flex-wrap: wrap;
 }
 
+.row.unlimited-items-search {
+  flex-wrap: wrap;
+}
+
 .row.unlimited-items .col{
   flex: none;
   width: 50%;
+}
+
+.row.unlimited-items-search .col{
+  flex: none;
+  width: 100%;
 }
 
 
