@@ -318,7 +318,6 @@ hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin-top: 12px; margin-bottom:2px; padding: 0;}
 
-<<<<<<< HEAD
 .item {
     webkit-transition: all .3s;
     transition: all .3s;
@@ -326,7 +325,8 @@ hr { display: block; height: 1px;
 
 .sounded {
     background-color: #57ba47;
-=======
+}
+
 .logo-bar {
 	background :url('../img/icon.png') no-repeat;
 	width : 30px;
@@ -357,5 +357,4 @@ hr { display: block; height: 1px;
 
 .item-head {
 	padding:10px;
->>>>>>> 5a9de0f8c7cd342408b4d86fa7a2dee05090d371
 }
