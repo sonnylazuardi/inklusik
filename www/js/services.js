@@ -110,7 +110,89 @@ angular.module('inklusik.services', [])
     {
       id: 1,
       title: 'Gundul Gundul Pacul',
+      img: 'gundul-gundul-pacul.jpg',
       source: 'Jawa Tengah',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 2,
+      title: 'Suwe Ora Jamu',
+      img: 'suwe-ora-jamu.jpg',
+      source: 'Yogyakarta',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 3,
+      title: 'Apuse',
+      img: 'apuse.jpg',
+      source: 'Papua',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 4,
+      title: 'Anak Kambing Saya',
+      img: 'anak-kambing-saya.jpg',
+      source: 'Nusa Tenggara Timur',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 5,
+      title: 'Buka Pintu',
+      img: 'buka-pintu.jpg',
+      source: 'Maluku',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 6,
+      title: 'Burung Kakatua',
+      img: 'burung-kakatua.jpg',
+      source: 'Maluku',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 7,
+      title: 'Ilir-Ilir',
+      img: 'ilir-ilir.jpg',
+      source: 'Jawa Tengah',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 8,
+      title: 'Kicir-Kicir',
+      img: 'kicir-kicir.jpg',
+      source: 'Jakarta',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 9,
+      title: 'Manuk Dadali',
+      img: 'manuk-dadali.jpg',
+      source: 'Jawa Barat',
+      melody: [
+        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+      ],
+      tick: '4/4',
+    }, {
+      id: 10,
+      title: 'Surilang',
+      img: 'surilang.jpg',
+      source: 'Jakarta',
       melody: [
         'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
       ],

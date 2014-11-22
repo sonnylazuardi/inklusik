@@ -230,6 +230,11 @@ angular.module('inklusik.controllers', [])
   
 })
 
+.controller('SongCtrl', function($scope,Partiturs) {
+  $scope.partiturs = Partiturs.partiturs;
+  $scope.locations = ['Jawa Tengah','Jakarta','Maluku','Jawa Barat','Nusa Tenggara Timur','Yogyakarta','Papua'];
+})
+
 .controller('SearchCtrl', function($scope, Instruments){
   $scope.instruments = Instruments.instruments;
 });
