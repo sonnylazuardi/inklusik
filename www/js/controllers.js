@@ -9,8 +9,8 @@ angular.module('inklusik.controllers', [])
   $scope.selected = '';
   $scope.holded = false;
   $scope.user;
-  var delay = 370;
   var timer;
+  var timer2;
   requireUser().then(function(user) {
     $scope.user = user;
     var profile = fbutil.syncObject(['users', user.uid]);
@@ -97,38 +97,67 @@ angular.module('inklusik.controllers', [])
     shake.stopWatch();
   });
 
-  //
-  //Partitiur
+    //Partitiur
   $scope.usingPartitur = false;
   $scope.partiturs = Partiturs.partiturs;
-  $scope.currentSong = {melody: [], title: 'Song', source: '-'}
   $scope.doTimer = function() {
     $scope.time++;
-    if ($scope.time > 60) {
+    if ($scope.time > ($scope.settings.currentSong.melody.length + 10) * 5 ) {
       $scope.time = 0;
     }
   };
   var timer;
-  $scope.resume = function() {
-    if ( angular.isDefined(timer) ) return;
-    timer = $interval($scope.doTimer, 750);
-  };
-
-  $scope.pause = function() {
-    if (angular.isDefined(timer)) {
-      $interval.cancel(timer);
-      timer = undefined;
-    }
-  }
-
   $scope.changeSong = function() {
     $scope.time = 0;
-    $scope.resume();
+    console.log($scope.settings.currentSong);
+    $scope.isPlaying = false;
+    $scope.control();
   };
 
   $scope.switch = function() {
     $scope.usingPartitur = !$scope.usingPartitur;
+  }
 
+  $scope.settings = {
+    notes: false,
+    tempo: 150,
+    currentSong : {melody: [], title: 'Song', source: '-'}
+  };
+  $scope.converter = {
+    'da2' : '1',
+    'la' : '3',
+    'ti' : '4',
+    'na' : '5',
+    'mi' : '7',
+    'da' : '1\'',
+  };
+  $scope.notes = function(melody) {
+    if ($scope.settings.notes) {
+      return $scope.converter[melody.toLowerCase()];
+    }else {
+      return melody.toUpperCase();
+    }
+  }
+  $scope.isPlaying = false;
+  $scope.control = function() {
+    $scope.isPlaying = !$scope.isPlaying;
+    if ($scope.isPlaying) {
+      if ( angular.isDefined(timer2) ) return;
+      timer2 = $interval($scope.doTimer, $scope.settings.tempo); 
+    } else {
+      if (angular.isDefined(timer2)) {
+        $interval.cancel(timer2);
+        timer2 = undefined;
+      }  
+    }
+  };
+  $scope.tempoChange = function() {
+    console.log('change');
+    if ($scope.isPlaying) {
+      console.log($scope.settings.tempo);
+      $scope.isPlaying = false;
+      $scope.control();
+    }
   }
 })
 
@@ -138,18 +167,11 @@ angular.module('inklusik.controllers', [])
   $scope.instrument = Instruments.find(name);
   $scope.selected = '';
   $scope.time = 0;
+  $scope.tempo = 150;
   $scope.sound = function(melody) {
     $scope.selected = melody;
     Player(name, melody);
   }
-  $scope.converter = {
-    'da2' : '1',
-    'la' : '3',
-    'ti' : '4',
-    'na' : '5',
-    'mi' : '7',
-    'da' : '1\'',
-  };
   var shake = new Shake({
     frequency: 300,                                                //milliseconds between polls for accelerometer data.
     waitBetweenShakes: 1000,                                       //milliseconds to wait before watching for more shake events.
@@ -167,35 +189,56 @@ angular.module('inklusik.controllers', [])
   //Partitiur
   $scope.usingPartitur = false;
   $scope.partiturs = Partiturs.partiturs;
-  $scope.currentSong = {melody: [], title: 'Song', source: '-'}
   $scope.doTimer = function() {
     $scope.time++;
-    if ($scope.time > 60) {
+    if ($scope.time > ($scope.settings.currentSong.melody.length + 10) * 5 ) {
       $scope.time = 0;
     }
   };
   var timer;
-  $scope.resume = function() {
-    if ( angular.isDefined(timer) ) return;
-    timer = $interval($scope.doTimer, 100);
-  };
-
-  $scope.pause = function() {
-    if (angular.isDefined(timer)) {
-      $interval.cancel(timer);
-      timer = undefined;
-    }
-  }
-
   $scope.changeSong = function() {
     $scope.time = 0;
-    $scope.resume();
+    console.log($scope.settings.currentSong);
+    $scope.control();
   };
 
   $scope.switch = function() {
     $scope.usingPartitur = !$scope.usingPartitur;
-
   }
+
+  $scope.settings = {
+    notes: false,
+    tempo: 150,
+    currentSong : {melody: [], title: 'Song', source: '-'}
+  };
+  $scope.converter = {
+    'da2' : '1',
+    'la' : '3',
+    'ti' : '4',
+    'na' : '5',
+    'mi' : '7',
+    'da' : '1\'',
+  };
+  $scope.notes = function(melody) {
+    if ($scope.settings.notes) {
+      return $scope.converter[melody.toLowerCase()];
+    }else {
+      return melody.toUpperCase();
+    }
+  }
+  $scope.isPlaying = false;
+  $scope.control = function() {
+    $scope.isPlaying = !$scope.isPlaying;
+    if ($scope.isPlaying) {
+      if ( angular.isDefined(timer) ) return;
+      timer = $interval($scope.doTimer, $scope.settings.tempo); 
+    } else {
+      if (angular.isDefined(timer)) {
+        $interval.cancel(timer);
+        timer = undefined;
+      }  
+    }
+  };
 
 })
 
