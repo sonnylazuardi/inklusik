@@ -1,6 +1,6 @@
 angular.module('inklusik.controllers', [])
 
-.controller('PlayCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, requireUser, Shake, Partiturs, $interval) {
+.controller('PlayCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, requireUser, Shake, Partiturs, $interval, $ionicScrollDelegate) {
   var name = $stateParams.name;
   $scope.name = name;
   $scope.instrument = Instruments.find(name);
@@ -41,13 +41,13 @@ angular.module('inklusik.controllers', [])
     var melody = $scope.last_melody[0];
     if (melody && $scope.profile) {
       if ($scope.profile.uid != melody.uid) {
-        Player(melody.name, melody.melody);
+        Player(melody.name, $scope.instrument.location, melody.melody);
       }
     }
   });
   $scope.playSound = function(melody) {
     $scope.selected = melody;
-    Player(name, melody);
+    Player(name, $scope.instrument.location, melody);
     $scope.harmony.$add({melody: melody, name: name, uid: $scope.profile.uid});
   }
   $scope.sound = function(melody) {
@@ -86,7 +86,7 @@ angular.module('inklusik.controllers', [])
     waitBetweenShakes: 1000,                                       //milliseconds to wait before watching for more shake events.
     threshold: 12,                                                 //how hard the shake has to be to register.
     success: function(magnitude, accelerationDelta, timestamp) {
-      Player($scope.name, $scope.selected);   
+      Player($scope.name, $scope.instrument.location, $scope.selected);   
       $scope.harmony.$add({melody: $scope.selected, name: $scope.name, uid: $scope.profile.uid});
     }, //callback when shake is detected. "this" will be the "shake" object.
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
@@ -115,6 +115,7 @@ angular.module('inklusik.controllers', [])
 
   $scope.switch = function() {
     $scope.usingPartitur = !$scope.usingPartitur;
+    $ionicScrollDelegate.resize();
   }
 
   $scope.settings = {
@@ -133,8 +134,11 @@ angular.module('inklusik.controllers', [])
   };
   $scope.notes = function(melody) {
     if ($scope.settings.notes) {
-      return $scope.converter[melody.toLowerCase()];
-    }else {
+      if ($scope.converter[melody.toLowerCase()] != null)
+        return $scope.converter[melody.toLowerCase()];
+      else
+        return melody.toUpperCase();
+    } else {
       return melody.toUpperCase();
     }
   }
@@ -161,7 +165,7 @@ angular.module('inklusik.controllers', [])
   }
 })
 
-.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval) {
+.controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval, $ionicScrollDelegate) {
   var name = $stateParams.name;
   $scope.name = name;
   $scope.instrument = Instruments.find(name);
@@ -174,7 +178,7 @@ angular.module('inklusik.controllers', [])
     $scope.selected = melody;
     var userRef = fbutil.ref('presences', $scope.user.uid);
     userRef.update({sounded: true});
-    Player(name, melody);
+    Player(name, $scope.instrument.location, melody);
   }
   $scope.sound = function(melody) {
     $scope.holded = true;
@@ -211,7 +215,7 @@ angular.module('inklusik.controllers', [])
     waitBetweenShakes: 1000,                                       //milliseconds to wait before watching for more shake events.
     threshold: 12,                                                 //how hard the shake has to be to register.
     success: function(magnitude, accelerationDelta, timestamp) {
-      Player($scope.name, $scope.selected);   
+      Player($scope.name, $scope.instrument.location, $scope.selected);   
     }, //callback when shake is detected. "this" will be the "shake" object.
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
   });
@@ -238,6 +242,7 @@ angular.module('inklusik.controllers', [])
 
   $scope.switch = function() {
     $scope.usingPartitur = !$scope.usingPartitur;
+    $ionicScrollDelegate.resize();
   }
 
   $scope.settings = {
@@ -256,8 +261,11 @@ angular.module('inklusik.controllers', [])
   };
   $scope.notes = function(melody) {
     if ($scope.settings.notes) {
-      return $scope.converter[melody.toLowerCase()];
-    }else {
+      if ($scope.converter[melody.toLowerCase()] != '')
+        return $scope.converter[melody.toLowerCase()];
+      else
+        return melody.toUpperCase();
+    } else {
       return melody.toUpperCase();
     }
   }
@@ -342,7 +350,7 @@ angular.module('inklusik.controllers', [])
   
 })
 
-.controller('DetailCtrl', function($scope, Instruments, $stateParams) {
+.controller('DetailCtrl', function($scope, Instruments, $stateParams, $ionicScrollDelegate) {
   $scope.instrument = Instruments.find($stateParams.name);
   $scope.expanded = ['short', 'short', 'short'];
   $scope.expand = function(id) {
@@ -351,6 +359,7 @@ angular.module('inklusik.controllers', [])
     } else {
       $scope.expanded[id] = 'short';
     }
+    $ionicScrollDelegate.resize();
   }
 
 })
