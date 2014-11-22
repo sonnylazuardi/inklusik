@@ -46,6 +46,11 @@ angular.module('inklusik.routes', ['simpleLogin'])
       url: "/song",
       templateUrl: "templates/song.html",
       controller: 'SongCtrl'
+    },
+    'lyric':{
+      url: "/lyric/:id",
+      templateUrl: "templates/lyric.html",
+      controller: 'LyricCtrl'
     }
   })
   

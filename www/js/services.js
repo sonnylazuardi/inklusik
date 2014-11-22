@@ -12,7 +12,7 @@ angular.module('inklusik.services', [])
                 function() { my_media.stop(); my_media.release();}); 
             my_media.play();
         } else {
-            console.log("sound/sunda/"+name+"/"+url+".mp3");
+            // console.log("sound/sunda/"+name+"/"+url+".mp3");
             ngAudio.play("sound/sunda/"+name+"/"+url+".mp3");
         }
     }
@@ -112,6 +112,7 @@ angular.module('inklusik.services', [])
       title: 'Gundul Gundul Pacul',
       img: 'gundul-gundul-pacul.jpg',
       source: 'Jawa Tengah',
+      lyric: '<p>Gundhul gundhul pacul cul<br>gembèlengan<br>Nyunggi nyunggi wakul kul<br>gembèlengan<br>Wakul nggilmpang segané dadi sak ratan<br>Wakul nggilmpang segané dadi sak ratan</p>',
       melody: [
         'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
       ],
@@ -128,10 +129,9 @@ angular.module('inklusik.services', [])
     }, {
       id: 3,
       title: 'Apuse',
-      img: 'apuse.jpg',
       source: 'Papua',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        'na', 'ti', 'ti', 'na', 'ti'
       ],
       tick: '4/4',
     }, {
@@ -197,8 +197,23 @@ angular.module('inklusik.services', [])
         'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
       ],
       tick: '4/4',
-    }
+    },
+    {
+      id: 11,
+      title: 'Suling Sunda',
+      source: 'Jawa Barat',
+      melody: [
+        'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', 'da2', 'la', 'da2', 'la'
+      ],
+      tick: '4/4',
+    },
   ];
+  self.find = function(id) {
+        console.log(id);
+        var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
+        console.log(wew);
+        return wew;
+    }
   return self;
 })
 

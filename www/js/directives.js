@@ -61,4 +61,25 @@ angular.module('inklusik.directives', []).
         simpleLogin.watch(update, scope);
       }
     };
-  }]);
+  }])
+
+  .directive('onLongPress', function($timeout) {
+    return {
+      restrict: 'A',
+      link: function($scope, $elm, $attrs) {
+        $elm.bind('touchstart', function(evt) {
+          // If the touchend event hasn't fired,
+          // apply the function given in on the element's on-long-press attribute
+          $scope.$apply(function() {
+            $scope.$eval($attrs.onLongPress)
+          });
+        });
+   
+        $elm.bind('touchend', function(evt) {
+          $scope.$apply(function() {
+            $scope.$eval($attrs.onTouchEnd)
+          });
+        });
+      }
+    };
+  });

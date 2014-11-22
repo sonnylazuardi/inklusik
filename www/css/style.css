@@ -291,8 +291,8 @@ button.selected {
 	height: 100px;
 	top: 0;
 	left: 0;
-	webkit-transition: all linear 1s;
-   	transition: all linear 1s;
+	webkit-transition: all linear 0.4s;
+   	transition: all linear 0.4s;
 }
 
 
@@ -317,6 +317,15 @@ button.selected {
 hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #ccc;
     margin-top: 12px; margin-bottom:2px; padding: 0;}
+
+.item {
+    webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.sounded {
+    background-color: #57ba47;
+}
 
 .logo-bar {
 	background :url('../img/icon.png') no-repeat;
