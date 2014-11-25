@@ -357,3 +357,17 @@ hr { display: block; height: 1px;
 .item-head {
 	padding:10px;
 }
+
+.stream-title h4{
+	font-family: roboto;
+	text-align: center;
+	padding: 10px;
+	padding-top:0px;
+}
+
+.stream-title h3{
+	font-family: roboto-lt;
+	text-align: center;
+	padding: 10px;
+	padding-bottom:0px;
+}
