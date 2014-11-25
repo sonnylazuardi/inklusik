@@ -53,6 +53,10 @@ angular.module('inklusik.controllers', [])
     $scope.selected = melody;
     Player(name, $scope.instrument.location, melody);
     $scope.harmony.$add({melody: melody, name: name, uid: $scope.profile.uid});
+    //record
+    if ($scope.isRecorded) {
+      $scope.activeRec.harmony.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time});
+    }
   }
   $scope.sound = function(melody) {
     $scope.holded = true;
@@ -105,9 +109,11 @@ angular.module('inklusik.controllers', [])
   $scope.partiturs = Partiturs.partiturs;
   $scope.doTimer = function() {
     $scope.time++;
-    if ($scope.user.uid == $scope.presences[0].uid) {
-      var songRef = fbutil.ref('song');
-      songRef.update({time: $scope.time});
+    if ($scope.time % 8 == 0) {
+      if ($scope.user.uid == $scope.presences[0].uid) {
+        var songRef = fbutil.ref('song');
+        songRef.update({time: $scope.time});
+      }
     }
     if ($scope.time > ($scope.settings.currentSong.melody.length + 10) * 5 ) {
       $scope.time = 0;
@@ -115,16 +121,17 @@ angular.module('inklusik.controllers', [])
   };
   
   $scope.changeSong = function() {
-    var timeTemp = $scope.time;
     $scope.time = 0;
-    $scope.song.time = 0;
-    $scope.song.tempo = $scope.settings.tempo;
-    $scope.song = $scope.settings.currentSong;
-    $scope.isPlaying = false;
-
-    if (timeTemp != 0)
-      $scope.control();
+    $scope.settings.currentSong.time = 0;
+    $scope.settings.currentSong.tempo = $scope.settings.tempo;
+    //update info song
+    if ($scope.user.uid == $scope.presences[0].uid) {
+      var songRef = fbutil.ref('song');
+      songRef.update($scope.settings.currentSong);
+    }
   };
+
+  $scope.isPlaying = false;
 
   $scope.switch = function() {
     $scope.usingPartitur = !$scope.usingPartitur;
@@ -135,7 +142,7 @@ angular.module('inklusik.controllers', [])
     notes: false,
     tempo: 150,
     tempoVal: 70,
-    currentSong : {melody: [], title: 'Song', source: '-'}
+    currentSong : {melody: [], title: 'Song', source: '-', id:0}
   };
   $scope.converter = {
     'da2' : '1',
@@ -155,7 +162,7 @@ angular.module('inklusik.controllers', [])
       return melody.toUpperCase();
     }
   }
-  $scope.isPlaying = false;
+  
   $scope.control = function() {
     $scope.controlPlay();
     $scope.last_songEvent.$add({state: $scope.isPlaying, time: $scope.time});
@@ -184,29 +191,54 @@ angular.module('inklusik.controllers', [])
     }
   };
 
-  var song = fbutil.syncObject('song');
-  song.$bindTo($scope, 'song');
-  song.$loaded(function(data) {
-    if ($scope.song.id != null) {
-      $scope.usingPartitur = true;
-      $ionicScrollDelegate.resize();
-      $scope.settings.currentSong = angular.copy($scope.song);
-      $scope.changeSong();
-      $scope.time = $scope.song.time+2;
+  $scope.song = fbutil.syncObject('song');
+  $scope.songId = 0;
+  // song.$bindTo($scope, 'song');
+  $scope.song.$watch(function() {
+    console.log($scope.song.id);
+    if ($scope.song) {
+      if ($scope.songId != $scope.song.id) {
+        $scope.songId = $scope.song.id;
+        $scope.usingPartitur = true;
+        $ionicScrollDelegate.resize();
+
+        $scope.song.tempo = $scope.settings.tempo;
+        $scope.isPlaying = false;
+        $scope.controlPlay();
+
+        $scope.time = $scope.song.time-1;
+        var curSong = Partiturs.find($scope.song.id);
+        if (curSong)
+          $scope.settings.currentSong = curSong;
+      }
     }
-  
-  });
+  }, function() {return $scope.song.id});
 
   $scope.last_songEvent = fbutil.syncArray(['song', 'events'], {limit: 1});
   $scope.last_songEvent.$watch(function() {
     var object = $scope.last_songEvent[0];
     if (object) {
-      console.log(object);
       $scope.isPlaying = !object.state;
       $scope.time = object.time;
       $scope.controlPlay();
     }
   });
+
+  $scope.activeRec = {};
+  $scope.isRecorded = false;
+
+  //Record sound
+  $scope.record = function() {
+    var recRef = fbutil.ref('record');
+    var newRec = recRef.push({
+      title: $scope.settings.currentSong.title,
+      user: user.uid,
+      harmony: []
+    });  
+
+    $scope.activeRec = newRec;
+    $scope.isRecorded = true;
+  }
 })
 
 .controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval, $ionicScrollDelegate) {
