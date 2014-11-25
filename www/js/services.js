@@ -110,7 +110,7 @@ angular.module('inklusik.services', [])
     {
       id: 1,
       title: 'Gundul Gundul Pacul',
-      img: 'gundul-gundul-pacul.jpg',
+      img: 'gundul-gundul-pacul2.jpg',
       source: 'Jawa Tengah',
       lyric: '<p>Gundhul gundhul pacul cul<br>gembèlengan<br>Nyunggi nyunggi wakul kul<br>gembèlengan<br>Wakul nggilmpang segané dadi sak ratan<br>Wakul nggilmpang segané dadi sak ratan</p>',
       melody: [
@@ -341,18 +341,9 @@ angular.module('inklusik.services', [])
     howtoplay : "Alat musik ini dimainkan dengan cara ditabuh",
     image : "genderang.jpg",
     imagecover: "genderang-cover.jpg",
-    location : "kamlimantan",
+    location : "kalimantan",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "genderang",
-    story : ""
-  }, {
-    description : "Alat musik tradisional yang berasal dari suku Dayak Kalimantan Tengah yaitu Gendang Dayak atau disebut juga Gendang Tunggal. Mempunyai ukuran agak besar dan panjang kira-kira satu atau dua meter dengan garis tengah mencapai 40 centimeter. Gendang Dayak atau dengan istilah lain juga Gandang Tatau terbuat dari kulit sapi, rusa atau ular sawah/piton (panganen). Pada bagian pangkal terbuka sebagai penguat suara ketika ditabuh.",
-    howtoplay : "Alat musik ini dimainkan dengan cara ditabuh",
-    image : "gendang.jpg",
-    imagecover: "gendang-cover.jpg",
-    location : "kamlimantan",
-    melody : [ "da", "mi", "na", "ti", "la", "da2" ],
-    name : "gendang",
     story : ""
   }, {
     description : "Kolintang atau kulintang adalah alat musik yang terdiri dari barisan gong kecil yang diletakkan mendatar. Alat musik ini dimainkan dengan diiringi oleh gong tergantung yang lebih besar dan drum. Kolintang merupakan bagian dari budaya gong Asia Tenggara, yang telah dimainkan selama berabad-abad di Kepulauan Melayu Timur - Filipina, Indonesia Timur, Malaysia Timur, Brunei, dan Timor. Alat musik ini berkembang dari tradisi pemberian isyarat sederhana menjadi bentuk seperti sekarang. Kegunaannya bergantung pada peradaban yang menggunakannya. Dengan pengaruh dari Hindu, Buddha, Islam, Kristen, dan Barat, Kulintang merupakan tradisi gong yang terus berkembang. Alat musik ini dibuat dari kayu lokal yang ringan namun kuat seperti telur, bandaran, wenang, kakinik kayu cempaka, dan yang mempunyai konstruksi fiber paralel. Nama kolintang berasal dari suaranya: tong (nada rendah), ting (nada tinggi) dan tang (nada biasa). Dalam bahasa daerah, ajakan 'Mari kita lakukan TONG TING TANG' adalah: ' Mangemo kumolintang'. Ajakan tersebut akhirnya berubah menjadi kata kolintang.",
@@ -387,7 +378,7 @@ angular.module('inklusik.services', [])
     howtoplay : "dengan cara dipukul.",
     image : "rebana.jpg",
     imagecover: "rebana-cover.jpg",
-    location : "sumatra",
+    location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "rebana",
     story : " Latar belakang sejarah Rebana Biang belum dapat diketahui secara pasti. Walau begitu, paling tidak terdapat dua keterangan yang berbeda mengenai asal-usul Rebana Biang menurut dua orang maestro kesenian tersebut. Seperti yang termuat dalam website resmi Lembaga Kebudayaan Betawi, menurut Sa’anam, Rebana Biang sampai di Betawi dibawa oleh pasukan Mataram pimpinan Sultan Agung. Ketika itu Rebana Biang berfungsi sebagai hiburan dan sarana melakukan kegiatan tarekat. Namun diperkirakan rebana biang sudah ada sebelum Agama Islam. Argumen ini belum sepenuhnya bisa diterima karena belum ada data yang cukup mendukung, namun jika Rebana Biang dipengaruhi budaya Arab terdengar cukup masuk akal. Adapun jika memang dikaitkan dengan kedatangan Sultan Agung, maka secara temporal Rebana Biang mungkin saja sudah masuk ke Betawi/Batavia sekitar 1628/1629. Artinya, Jika meneypakati argument Sa’anam, berarti Rebana Biang sudah berumur tua di Betawi. Keterangan lain dikemukakan oleh Abdurrachman, seorang seniman Rebana Biang, menurutnya Rebana Biang sampai di Betawi dibawa dari tanah Banten oleh seorang yang dipanggil Bapak kumis. Ia adalah seniman Rebana Biang yang memperkenalkannya di Ciganjur. Orang Ciganjur pertama yang belajar Rebana Biang kepada Bapak Kumis adalah H. Damong. Melalui H. Damong inilah kemudian kesenian Rebana Biang main populer, sehingga melahirkan generasi penerus seperti H. Ditong, H. Amsir, H. Abdullah, dan lain-lain. H. Sa’aba menjadi generasi ketiga yang meneruskannya kepada kegenerasi keempat, yaitu Abdurrachman, Engkos, H. Mursidi, dan lain-lain (lembagakebudayaanbetawi.com). Argumen ini terdengar lebih terperinci dengan menyebutkan nama penyebarnya serta generasi ke generasi yang meneruskan. Hanya saja, keterangan ini tentu bukan sumber primer, karena Abdurrachman bole hjadi memperoleh informasi ini pun secara turun-temurun pula. Artinya, ada rentang waktu yang cukup jauh untuk mengetahu secara pasti siapa penyebar Rebana Biang yang pertama. Versi lain mengemukakan, seperti dalam buku Seni Budaya Betawi (Dinas Kebudayaan Provinsi DKI Jakarta, Rebana menurut perkembangannya diciptakan oleh Pak Saiman dari aspirasinya ketika air hujan rintik-rintik diatap rumahnya yang bocor. Namun pernyataan tersebut tidak akurat. Tidak disinggung siapa itu Pak Saiman, dimana tempat tinggalnya dan sejak kapan memperkenalkan kepada khalayak dan kapan mulai dikembangkan.Pendapat lain menjelaskan, berasal dari daerah Sumatera Selatan, yang berfungsi untuk upacara-upacara, salah satunya Maulud dan lain-lain. Sebagai alat musik pengiring nyanyian yang mempergunakan prosa-prosa Arab tinggi (bukan ayat-ayat Al Quran) karena mulanya Rebana banyak digelar di Masjid-masjid, Surau dan di tengah komunitas Muslim. Walaupun musik Rebana lebih kencang ditindih puji-pujian yang memuliakan asma Allah dan menggunakan bahasa Arab, namun ada pula yang mengatakan Rebana bukan dari Timur Tengah"
@@ -396,7 +387,7 @@ angular.module('inklusik.services', [])
     howtoplay : "Keutamaan para pemain saluang ini adalah dapat memainkan saluang dengan meniup dan menarik napas bersamaan, sehingga peniup saluang dapat memainkan alat musik itu dari awal dari akhir lagu tanpa putus. Cara pernapasan ini dikembangkan dengan latihan yang terus menerus. Teknik ini dinamakan juga sebagai teknik manyisiaha n angok (menyisihkan napas).",
     image : "saluang.jpg",
     imagecover: "saluang-cover.jpg",
-    location : "sumatra",
+    location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "saluang",
     story : "Orang Minangkabau memiliki tradisi seni pertunjukan yang termasuk paling kaya ragamnya di Indonesia. sakah satunya adalah saluang; bentuk kesenian yang tidak membawakan cerita sama sekali dan hanya terdiri dari lagu-lagu lepas. Cerita-cerita itu-yang sudah sering diketahui oleh pendengarnya-tidak disajikan sebagai hafalan, melainkan diceritakan secara spontan. Unsur spontanitas juga terdapat dalam syair-syair untuk lagu-lagu lepasnya. Pada umumnya suatu pertunjukan dimulai agak malam, kemungkinan setelah suatu pertunjukan pengantar-musik pop, atau tarian minang yang diringi talempong- dituntaskan. Pada tahap awal pertunjukan seperti pertunjukan saluang, Rabab Pariaman, suasana biasanya ringan, dan sering syair lagunya mengenai percintaan, yang kadang secara sugestif. Tetapi semakin jauh malam menjadi lebih bersuasana nostalgia, melankonis, dan sekaligus memilukan.Dengan jumlah pemain yang sangat terbatas, bentuk kesenian ini bersuara pelan dan bersifat akrab-cocok untuk tengah malam. Dari pendengarnya dituntut perhatian penuh, tetapi tidak selalu diperoleh: para penonton malah ngobrol, merokok, makan, main kartu dan domino; pada muda-mudi mencuri kesempatan bercumbu rayu. Kalau sudah sampai jam satu atau dua pagi, banyak penonton telah pulang, dan dari yang masih tinggal kebanyakan tertidur. Tetapi beberapa diantaranya masih bertahan duduk dekat dengan para pemain, menyimak syair-syairnya dengan tekun, sambil berdecak kagum pada suatu kalimat yang tepat, menuggu babak-babak cerita selanjutnya."
@@ -405,7 +396,7 @@ angular.module('inklusik.services', [])
     howtoplay : "ditiup",
     image : "serunai.jpg",
     imagecover: "serunai-cover.jpg",
-    location : "sumatra",
+    location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "serunai",
     story : "Asal mula serunai atau puput serunai diperkirakan datang dari nama shehnai, alat musik yang berasal dari Lembah Kashmir di dataran India Utara.[1] Alat musik shehnai diduga merupakan perkembangan dari alat musik pungi yang dipakai dalam musik para pemikat ular tradisional India.Setelah dikenal luas di dataran tinggi Minangkabau (kawasan Sumatera Barat sekarang), serunai menjadi populer sebagai alat musik tiup tradisional Minang. Alat musik ini dikenal merata di Sumatera Barat, terutama di bagian dataran tinggi seperti di daerah Agam, Tanah Datar dan Lima Puluh Kota, dan juga di sepanjang pesisir pantai Sumatera Barat. Alat musik ini sejak lama telah dipopulerkan ke seluruh Indonesia oleh para imigran dari Minang dan juga telah dikenal sebagai alat musik tradisional di Malaysia dan masyarakat Banjar di Kalimantan dengan nama yang sama."
@@ -414,11 +405,22 @@ angular.module('inklusik.services', [])
     howtoplay : "Dipukul",
     image : "talempong.jpg",
     imagecover: "talempong-cover.jpg",
-    location : "sumatra",
+    location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
     name : "talempong",
     story : "Keberadaan musik talempong tersebut merupakan salah satu bagaian dari kesatuan sistem budaya masyarakat Minangkabau. Hal demikian dapat dilihat dalam upacara batagak gadang --adat perhelatan pimpinan suku. Arti penting keberadaan musik talempong itu dalam sistem kebudayaan masyarakat Minangkabau tercermin dalam ungkapan pepatah adatnya; kalau alam alah takambang, marawa tampak takiba, batingkah aguang jo talempong,  tandonyo adaik badiri di nagari, pupuik jo saluang kabungonyo, silek jo tari kagunjainyo (kalau alam sudah terkembang, marawa (bendera kebesaran adat) tampak berkibar, bertingkah gong jo talempong, tandanya adat berdiri di nagari, puput jo saluang kebunganya, silek jo tari kegunjainya. Menurut Bahar, gong dan talempong, sejajar dengan ’kekuasaan’ datuak (datuk) sebagai pimpinan tertinggi dalam kehidupan masyarakat Minangkabau (Bahar. 2009: 7). Sejajar dalam pengertian yang dimaksud Bahar adalah bahwa musik talempong itu mempunyai peran signifikan dalam uacara pengangatan penghulu; seperti dimaksud dalam ungkapan adatnya."
-  } ];
+  }, {
+    description : "Tifa mirip dengan alat musik gendang yang dimainkan dengan cara dipukul. Alat musik ini terbuat dari sebatang kayu yang dikosongi atau dihilangi isinya dan pada salah satu sisi ujungnya ditutupi, dan biasanya penutupnya digunakan kulit rusa yang telah dikeringkan untuk menghasilkan suara yang bagus dan indah. Bentuknyapun biasanya dibuat dengan ukiran. Setiap suku di Maluku dan Papua memiliki tifa dengan ciri khas nya masing-masing.",
+    howtoplay : "dengan cara dipukul.",
+    image : "tifa.jpg",
+    location : "papua",
+    imagecover: "tifa-cover.jpg",
+    melody : [ "da", "mi", "na", "ti", "la", "da2" ],
+    name : "tifa",
+    story : " Konon di suatu tempat di Biak ada dua orang laki-laki bersaudara yang bernama Fraimun dan Sarenbeyar, masing-masing memiliki arti yaitu saren : busur dan beyar : tali busur, jadi sarenbeyar berarti saren / busur yang telah terpasang anak panahnya, fraimun artinya perangkat perang yang gagangnya dapat membunuh (karena dia pernah membunuh). Kedua kakak beradik ini pergi dari daerah tempat tinggal mereka yang bernama Maryendi dan berpetualang hingga sampai di daerah Biak Utara yang disebut Wampamber, karena mereka melihat bahwa kampung mereka Maryendi ini telah tenggelam. Keduanya lalu tinggal menetap di  Wampamber, hingga suatu malam mereka berdua pergi berburu ke dalam hutan dan mendengar suara yang ternyata berasal dari sebuah pohon yang disebut pohon opsur, yang artinya pohon atau kayu yang mengeluarkan suara. Mereka lalu pulang ke rumah malam itu dan keesokan paginya kembali ke tempat yang sama di dalam hutan hendak melihat lagi pohon opsur tersebut. Ternyata pada pohon opsur itu terdapat juga lebah madu hutan dan sarangnya serta soa-soa / biawak (lizard) yang hidup disitu. Keduanya lalu menebang pohon itu dan membuat batang kayu seukuran  ± 50 cm panjangnya. Rupanya mereka berdua memiliki keahlian khusus untuk mengerjakan kayu yang ditebang itu menjadi sebuah benda yang disebut tifa (alat musik pukul atau ditabuh). Keduanya tidak memiliki peralatan yang cukup lengkap, hanya peralatan sederhana seperti nibong (sebatang besi panjang ± 1 m, bagian ujungnya tajam) untuk mengeruk atau menggali bagian tengah dari batang kayu tersebut sehingga terbentuk lubang sepanjang kayu itu membentuk seperti pipa. Selain dikeruk dengan nibong, proses pelubangan dilakukan selang-seling sambil membakar bagian tengahnya untuk hasil yang lebih bagus. Setelah itu mereka hendak menutup satu sisi permukaan lubang (bagian atasnya) dengan sesuatu. Setelah berpikir maka sang adik kemudian mendapat akal dan menyuruh kakaknya untuk menguliti sebagian kulit pahanya sebagai penutup lubang kayu seperti yang mereka maksudkan. Sang kakak berkata kepada adiknya kalau hal itu dilakukan akan sangat menyakitkan dirinya. Kakaknya menyarankan agar memakai kulit hewan saja, yaitu kulit dari soa-soa (sebutan di Papua) atau biawak yang pernah mereka lihat hidup di pohon opsur itu. Tapi untuk menangkap soa-soa tersebut mereka harus menggunakan cara khusus, yaitu dengan memanggil hewan itu menggunakan bahasa mereka (Bahasa Biak), bunyinya ; “ Hei, napiri bo, ………” dan seterusnya, lalu soa-soa tersebut mengangkat kepalanya pertanda dia mengerti akan maksud kedua bersaudara ini yang hendak mengambil kulitnya, dia pun merelakan dirinya dibawa, maka Fraimun & Sarenbeyar pun mengikatnya dengan tali dan membawanya pulang. Mereka lalu menguliti soa-soa  tersebut dan memakai kulitnya untuk menutup salah satu permukaan kayu yang telah dilubangi itu, sehingga bagian yang ditutup dengan kulit adalah bagian atasnya. Maka jadilah alat musik tabuh / pukul yang dikenal sebagai tifa."
+  } 
+
+  ];
     self.find = function(name) {
         return _.findWhere(self.instruments, {name : name});
     }

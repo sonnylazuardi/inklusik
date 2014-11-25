@@ -369,6 +369,16 @@ angular.module('inklusik.controllers', [])
   console.log($scope.partitur);
 })
 
+
+.controller('ChooseCtrl', function($scope,Partiturs, Instruments, $stateParams){
+  $scope.instruments = Instruments.instruments;
+  $scope.locations = ['sunda', 'jawa','bali','kalimantan','maluku','nusa','papua','sumatera',];
+  $scope.partiturid = Partiturs.find($stateParams.id);
+})
+
 .controller('SearchCtrl', function($scope, Instruments){
   $scope.instruments = Instruments.instruments;
 });
+
+
+

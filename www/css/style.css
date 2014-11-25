@@ -102,7 +102,7 @@
 .link-more {
 	font-family:roboto;
 	text-align:center;
-	color:#2284C6;
+	color:#838383;
 	text-decoration:none;
 }
 
@@ -121,7 +121,6 @@
 .side-menu-footer {
 	background-color:#5D5D5D;
 	border-width:0px;
-	margin:10px;
 }
 
 .side-menu-footer > p {
@@ -181,7 +180,7 @@ button.selected {
 
 
 .short {
-   height: 100px;
+   height: 105px;
    overflow: hidden;
    padding-bottom: 50px;
 }
