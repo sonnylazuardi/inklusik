@@ -47,10 +47,16 @@
             <div class="col col-20">
               {{settings.currentSong.tick}}  
             </div>
-            <div class="col col-40">
+            <div class="col col-20">
               <a href class="button" ng-click="control()">
                 <i class="fa fa-play" ng-show="!isPlaying"></i>
                 <i class="fa fa-pause" ng-show="isPlaying"></i>
+              </a>
+            </div>
+            <div class="col col-20">
+              <a href class="button" ng-click="record()">
+                <i class="fa fa-circle" ng-show="!isRecording"></i>
+                <i style="color:#ED2626" class="fa fa-circle" ng-show="isRecording"></i>
               </a>
             </div>
           </div>
