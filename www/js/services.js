@@ -3,9 +3,9 @@ angular.module('inklusik.services', [])
 .service('Player', function(ngAudio, $cordovaMedia) {
     var app = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;
     var ctr = 1;
-    function Player (name, url) {
+    function Player (name, region, url) {
         if (app) {
-            var src = "/android_asset/www/sound/sunda/"+name+"/"+url+".mp3";
+            var src = "/android_asset/www/sound/"+region+"/"+name+"/"+url+".mp3";
 
             var my_media = new Media(src, 
                 function() { my_media.stop(); my_media.release();},
@@ -13,7 +13,7 @@ angular.module('inklusik.services', [])
             my_media.play();
         } else {
             // console.log("sound/sunda/"+name+"/"+url+".mp3");
-            ngAudio.play("sound/sunda/"+name+"/"+url+".mp3");
+            ngAudio.play("sound/"+region+"/"+name+"/"+url+".mp3");
         }
     }
     return Player;
@@ -211,9 +211,9 @@ angular.module('inklusik.services', [])
       tick: '4/4',
     }];
   self.find = function(id) {
-        var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
-        return wew;
-    }
+    var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
+    return wew;
+  }
   return self;
 })
 
