@@ -51,7 +51,12 @@ angular.module('inklusik.routes', ['simpleLogin'])
       url: "/lyric/:id",
       templateUrl: "templates/lyric.html",
       controller: 'LyricCtrl'
-    }
+    },
+    'choose':{
+      url: "/choose/:id",
+      templateUrl: "templates/choose.html",
+      controller: 'ChooseCtrl'
+    },
   })
   
   .config(function($stateProvider) {
