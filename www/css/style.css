@@ -371,3 +371,12 @@ hr { display: block; height: 1px;
 	padding: 10px;
 	padding-bottom:0px;
 }
+
+.custom-list {
+	margin-bottom: 0px;
+	
+}
+
+.custom-list a {
+	border-bottom-width: 1px;
+}

@@ -464,11 +464,12 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
-.controller('StreamCtrl', function($scope,Partiturs){
+.controller('StreamCtrl', function($scope,Partiturs,$stateParams){
   $scope.author = "Luthfi Hamid";
   $scope.partitur = Partiturs.find(1);
   $scope.liked = false;
   $scope.progress = 30;
+  $scope.isPlaying = false;
   $scope.next = function(){
 
   }
@@ -477,6 +478,9 @@ angular.module('inklusik.controllers', [])
   }
   $scope.toggleLike = function(){
     $scope.liked = !$scope.liked;
+  }
+  $scope.togglePlay = function(){
+    $scope.isPlaying = !$scope.isPlaying;
   }
 })
 
