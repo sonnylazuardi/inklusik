@@ -6,14 +6,18 @@ angular.module('inklusik.controllers', [])
   $scope.instrument = Instruments.find(name);
   $scope.harmony = fbutil.syncArray(['harmony'], {limit: 10});
   $scope.last_melody = fbutil.syncArray(['harmony'], {limit: 1});
+
   $scope.selected = '';
   $scope.holded = false;
-  var timer, timer2, delay = 350;
+  var timer, timer2, timer3, delay = 350;
 
   requireUser().then(function(user) {
     $scope.user = user;
     var profile = fbutil.syncObject(['users', user.uid]);
     profile.$bindTo($scope, 'profile');
+
+    //mencari user pertama
+    $scope.presences = fbutil.syncArray(['presences']);
 
     profile.$loaded().then(function(snap) {
       var listRef = fbutil.ref('presences');
@@ -101,18 +105,25 @@ angular.module('inklusik.controllers', [])
   $scope.partiturs = Partiturs.partiturs;
   $scope.doTimer = function() {
     $scope.time++;
+    if ($scope.user.uid == $scope.presences[0].uid) {
+      var songRef = fbutil.ref('song');
+      songRef.update({time: $scope.time});
+    }
     if ($scope.time > ($scope.settings.currentSong.melody.length + 10) * 5 ) {
       $scope.time = 0;
     }
   };
-  var timer;
+  
   $scope.changeSong = function() {
+    var timeTemp = $scope.time;
     $scope.time = 0;
     $scope.song.time = 0;
     $scope.song.tempo = $scope.settings.tempo;
     $scope.song = $scope.settings.currentSong;
     $scope.isPlaying = false;
-    $scope.control();
+
+    if (timeTemp != 0)
+      $scope.control();
   };
 
   $scope.switch = function() {
@@ -175,12 +186,15 @@ angular.module('inklusik.controllers', [])
 
   var song = fbutil.syncObject('song');
   song.$bindTo($scope, 'song');
-  song.$loaded(function() {
+  song.$loaded(function(data) {
     if ($scope.song.id != null) {
       $scope.usingPartitur = true;
+      $ionicScrollDelegate.resize();
       $scope.settings.currentSong = angular.copy($scope.song);
       $scope.changeSong();
+      $scope.time = $scope.song.time+2;
     }
+  
   });
 
   $scope.last_songEvent = fbutil.syncArray(['song', 'events'], {limit: 1});
