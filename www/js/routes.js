@@ -61,6 +61,11 @@ angular.module('inklusik.routes', ['simpleLogin'])
       url: "/stream",
       templateUrl: "templates/stream.html",
       controller: 'StreamCtrl'
+    },
+    'streamlist':{
+      url: "/streamlist",
+      templateUrl: "templates/streamlist.html",
+      controller: 'StreamListCtrl'
     }
   })
   

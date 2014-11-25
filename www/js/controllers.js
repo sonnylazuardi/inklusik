@@ -27,6 +27,7 @@ angular.module('inklusik.controllers', [])
         avatar: snap.avatar,
         instrument: {name: name, image: $scope.instrument.image}
       };
+      $scope.profile = userObj;
       var userRef = fbutil.ref('presences', user.uid);
       userRef.set(userObj);
 
@@ -54,8 +55,8 @@ angular.module('inklusik.controllers', [])
     Player(name, $scope.instrument.location, melody);
     $scope.harmony.$add({melody: melody, name: name, uid: $scope.profile.uid});
     //record
-    if ($scope.isRecorded) {
-      $scope.activeRec.harmony.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time});
+    if ($scope.isRecording) {
+      $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time});
     }
   }
   $scope.sound = function(melody) {
@@ -223,32 +224,24 @@ angular.module('inklusik.controllers', [])
       $scope.controlPlay();
     }
   });
-<<<<<<< HEAD
 
   $scope.activeRec = {};
-  $scope.isRecorded = false;
+  $scope.isRecording = false;
 
   //Record sound
   $scope.record = function() {
     var recRef = fbutil.ref('record');
     var newRec = recRef.push({
       title: $scope.settings.currentSong.title,
-      user: user.uid,
+      user: $scope.user.uid,
+      avatar: $scope.profile.avatar,
+      name: $scope.profile.name,
       harmony: []
     });  
-
-    $scope.activeRec = newRec;
-    $scope.isRecorded = true;
+    console.log(newRec);
+    $scope.activeRec = fbutil.ref('record', newRec.name(), 'harmony');
+    $scope.isRecording = true;
   }
-=======
-  
-  $scope.isRecording = false;
-  $scope.record = function(){
-    $scope.isRecording = !$scope.isRecording;
-  };
-
-
->>>>>>> e83655042530c5e23e7908f0bbcc72dab38ac14d
 })
 
 .controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval, $ionicScrollDelegate) {
@@ -485,6 +478,11 @@ angular.module('inklusik.controllers', [])
   $scope.toggleLike = function(){
     $scope.liked = !$scope.liked;
   }
+})
+
+.controller('StreamListCtrl', function($scope, fbutil) {
+  $scope.streams = fbutil.syncArray(['record']);
+
 })
 
 
