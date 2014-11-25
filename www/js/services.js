@@ -110,7 +110,7 @@ angular.module('inklusik.services', [])
     {
       id: 1,
       title: 'Gundul Gundul Pacul',
-      img: 'gundul-gundul-pacul2.jpg',
+      img: 'gundul-gundul-pacul.jpg',
       source: 'Jawa Tengah',
       lyric: '<p>Gundhul gundhul pacul cul<br>gembèlengan<br>Nyunggi nyunggi wakul kul<br>gembèlengan<br>Wakul nggilmpang segané dadi sak ratan<br>Wakul nggilmpang segané dadi sak ratan</p>',
       melody: [
@@ -122,25 +122,28 @@ angular.module('inklusik.services', [])
       title: 'Suwe Ora Jamu',
       img: 'suwe-ora-jamu.jpg',
       source: 'Yogyakarta',
+      lyric: '<p>Suwe ora jamu, jamu godhong telo<br>Suwe ora ketemu, ketemu pisan gawe gelo<br>Suwe ora jamu, jamu godhong telo<br>Suwe ora ketemu, ketemu pisan gawe gelo</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '3', '4', '5', '0', '5', '3', '4', '5', '0', '0', '3', '4', '0', '4', '5', '3', '4', '0', '0', '5', '7' , '0', '7', '1\'', '1\'', '7', '0', '7', '6', '6', '4', '0', '4', '3', '3', '1\'', '0', '0', '3', '4', '5', '0', '5', '3', '4', '5', '0', '0', '3', '4', '0', '4', '5', '3', '4', '0', '0', '5', '7' , '0', '7', '1\'', '1\'', '7', '0', '7', '6', '6', '4', '0', '4', '3', '3', '1\'', '0', '0'
       ],
       tick: '4/4',
     }, {
       id: 3,
       title: 'Apuse',
       source: 'Papua',
+      lyric: 'Apuse kokondao yarabe soren Doreri Doreri<br>Wuf lenso ba ri ne ma ba ki Pa se<br>Apuse kokondao yarabe soren Doreri<br>Wuf lenso ba ni ne ma ba ki pa se<br>Rafabye aswarakwar rafabye, aswarakwar',
       melody: [
-        'na', 'ti', 'ti', 'na', 'ti'
+        '5', '1', '3', '0', '2', '3', '2', '1', '0', '5', '1', '3', '0', '3', '2', '3', '4', '2', '0', '5', '1', '2', '4', '5', '0', '4', '3', '2', '3', '0', '2', '1', '0', '0', '0', '1', '0', '5', '1', '3', '0', '2', '3', '0', '2', '1', '0', '5', '1', '3', '0', '3', '2', '3', '4', '2', '0', '5', '1', '2', '0', '4', '5', '0', '4', '3', '0', '2', '3', '0', '2', '1', '0', '0', '0', '0', '5', '1', '4', '3', '0', '0', '0', '0', '5', '7', '2', '1', '1', '0', '0', '0', '0', '5', '1', '4', '3', '0', '0', '0', '0', '5', '7', '2', '1', '0', '0', '0', '1', '0'
       ],
-      tick: '4/4',
+      tick: '2/4',
     }, {
       id: 4,
       title: 'Anak Kambing Saya',
       img: 'anak-kambing-saya.jpg',
       source: 'Nusa Tenggara Timur',
+      lyric: 'Mana di mana anak kambing saya<br>Anak kambing tuan ada di pohon waru<br>Mana di mana jantung hati saya<br>jantung hati tuan ada di kampung baru<br>Caca marica hehei, caca marica hehei<br>Caca marica ada di kampung baru',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '2', '2', '3', '4', '3', '2', '1', '0', '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4', '6', '6', '3', '3', '3', '3', '3', '5', '5', '2', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4',
       ],
       tick: '4/4',
     }, {
@@ -206,12 +209,9 @@ angular.module('inklusik.services', [])
         'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', 'da2', 'la', 'da2', 'la'
       ],
       tick: '4/4',
-    },
-  ];
+    }];
   self.find = function(id) {
-        console.log(id);
         var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
-        console.log(wew);
         return wew;
     }
   return self;
@@ -258,7 +258,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "Gangsa adalah nama salah satu instrumen dalam suatu ensembel atau barungan gambelan yang daun bilahannya terbuat dari perunggu. Banyak jenis barungan gambelan Bali yang mempergunakan gangsa, seperti umpamanya semara pagulingan, angklung, gong kebyar, gong gede,, gambang. Ada banyak lagi yang lain jika disebutkan satu persatu.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "gangsa.jpg",
+    image : "placeholder.jpg",
     imagecover: "gangsa-cover.jpg",
     location : "bali",
     melody : [ "dang", "deng", "ding", "dong", "dung" ],
@@ -267,7 +267,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Gong adalah alat musik yang terbuat dari leburan logam (perunggu dengan tembaga)dengan permukaan yang bundar (dengan atau tanpa Pencu). Gong dapat di gantung pada bingkai atau diletakkan berjajar pada rak, atau bisa ditempatkan pada permukaan yang lunak seperti tikar. Selain itu ada juga gong genggam yang dimainkan sambil berjalan ataupunmenari. Gong yang memiliki suara rendah, ditabuh dengan pemukul kayu yang ujungnya di balut dengan karet, katun, atau benang. Sedangkan untuk permainan melodi diperankan olehgong kecil.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "gong.jpg",
+    image : "placeholder.jpg",
     imagecover: "gong-cover.jpg",
     location : "bali",
     melody : [ "besar", "kecil", "sedang" ],
@@ -276,7 +276,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Kethuk serupa juga dengan bonang namun memiliki nada yang lebih rendah. Krthuk merupakan alat music gamelan yang memiliki jumlah paling sedikit yaitu dua. Seperti halnya gong, kethuk juga dimainkan sesekali, namun permainan kethuk bersamaan dengan permainan kenong. Biasanya pemain kedua  musik ini dengan pemukul pada tangan kanan memainkan kenong dan kiri memainkan kethuk.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "kethuk.jpg",
+    image : "placeholder.jpg",
     imagecover: "kethuk-cover.jpg",
     location : "bali",
     melody : [ "dang", "deng", "ding", "dong", "dung" ],
@@ -285,7 +285,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Ugal merupakan instrumen dalam sebuah gamelan Bali. Ini adalah instrumen perunggu yang dimainkan oleh satu tangan dengan palu kecil. Biasanya ada sepuluh kunci, memberikan jangkauan maksimum yang mencakup sekitar dua oktaf. Seperti gangsa, mereka tergantung di atas resonator bambu disetel.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "ugal.jpg",
+    image : "placeholder.jpg",
     imagecover: "ugal-cover.jpg",
     location : "bali",
     melody : [ "dang", "deng", "ding", "dong", "dung" ],
@@ -294,7 +294,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "Bonang merupakan kumpulan dari gong-gong kecil yan terkadang juga disebut dengan nama “pot” atau “ceret”), kesemuanya diletakkan dan disusun berjajar pada bingkai kayu (yang disebut “rancak”) dalam dua baris.  Baris pertama atau baris yang bagian disebut dengan nama Jaleran atau bisa juga disebut dengan  Brunjung, sedangkan baris yang kedua/bawah disebut dengan sebutan setren/dhempok.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "bonang.jpg",
+    image : "placeholder.jpg",
     imagecover: "bonang-cover.jpg",
     location : "jawa",
     melody : [ "ji", "ro", "lu", "ma", "nem" ],
@@ -303,7 +303,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Gender, adalah alat musik yang terdiri dari bilah-bilah metal yang ditegangkan dengan tali. Gender dapat dibedakan menjadi Gender Barung dan gender Panerus. Gender Barung memiliki bilah metal dengan ukuran sedang dalam keluarga Gender. Gender Barung memiliki titi nada satu oktaf lebih rendah dari Gender Panerus. Gender Panerus memiliki bilah-bilah yang paling kecil dalam keluarga Gender. Gender Panerus memiliki titi nada satu oktaf lebih tinggi daripada Gender Barung.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "gender.jpg",
+    image : "placeholder.jpg",
     imagecover: "gender-cover.jpg",
     location : "jawa",
     melody : [ "ji", "ro", "lu", "ma", "nem" ],
@@ -312,7 +312,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Kendang, kendhang, atau gendang adalah instrumen dalam gamelan Jawa Tengah yang salah satu fungsi utamanya mengatur irama. Instrument ini dibunyikan dengan tangan, tanpa alat bantu. Jenis kendang yang kecil disebut ketipung, yang menengah disebut kendang ciblon/kebar. Pasangan ketipung ada satu lagi bernama kendang gedhe biasa disebut kendang kalih. Kendang kalih dimainkan pada lagu atau gendhing yang berkarakter halus seperti ketawang, gendhing kethuk kalih, dan ladrang irama dadi. Bisa juga dimainkan cepat pada pembukaan lagu jenis lancaran ,ladrang irama tanggung. Untuk wayangan ada satu lagi kendhang yang khas yaitu kendhang kosek.",
     howtoplay : "Alat musik ini dimainkan dengan cara ditabuh",
-    image : "kendhang.jpg",
+    image : "placeholder.jpg",
     imagecover: "kendhang-cover.jpg",
     location : "jawa",
     melody : [ "dang", "dlang", "lung", "tak" ],
@@ -321,7 +321,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Alat ini berukuran sedang dan beroktaf tinggi. Seperti demung,  Saron memainkan balungan dalam wilayahnya yang terbatas. Pada teknik tabuhan imbal-imbalan, dua saron memainkan lagu jalin menjalin yang bertempo cepat. Seperangkat gamelan mempunyai dua Saron, tetapi ada gamelan yang mempunyai lebih dari dua saron.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "saronpanembung.jpg",
+    image : "placeholder.jpg",
     imagecover: "saronpanembung-cover.jpg",
     location : "jawa",
     melody : [ "ji", "ro", "lu", "ma", "nem" ],
@@ -330,7 +330,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Alat ini seperti saron biasa, namun Pemukul saron panerus lebih kecil dengan ujung lainnya yang lancip, sedangkan dua lainnya memiliki alat pemukul yang besar. Cara memainkannya pun berbeda.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "saronpanerus.jpg",
+    image : "placeholder.jpg",
     imagecover: "saronpanerus-cover.jpg",
     location : "jawa",
     melody : [ "ji", "ro", "lu", "ma", "nem" ],
@@ -339,7 +339,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "Alat musik tradisional yang berasal dari suku Dayak Kalimantan Tengah yaitu Gendang Dayak atau disebut juga Gendang Tunggal. Mempunyai ukuran agak besar dan panjang kira-kira satu atau dua meter dengan garis tengah mencapai 40 centimeter. Gendang Dayak atau dengan istilah lain juga Gandang Tatau terbuat dari kulit sapi, rusa atau ular sawah/piton (panganen). Pada bagian pangkal terbuka sebagai penguat suara ketika ditabuh.",
     howtoplay : "Alat musik ini dimainkan dengan cara ditabuh",
-    image : "genderang.jpg",
+    image : "placeholder.jpg",
     imagecover: "genderang-cover.jpg",
     location : "kalimantan",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -348,7 +348,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "Kolintang atau kulintang adalah alat musik yang terdiri dari barisan gong kecil yang diletakkan mendatar. Alat musik ini dimainkan dengan diiringi oleh gong tergantung yang lebih besar dan drum. Kolintang merupakan bagian dari budaya gong Asia Tenggara, yang telah dimainkan selama berabad-abad di Kepulauan Melayu Timur - Filipina, Indonesia Timur, Malaysia Timur, Brunei, dan Timor. Alat musik ini berkembang dari tradisi pemberian isyarat sederhana menjadi bentuk seperti sekarang. Kegunaannya bergantung pada peradaban yang menggunakannya. Dengan pengaruh dari Hindu, Buddha, Islam, Kristen, dan Barat, Kulintang merupakan tradisi gong yang terus berkembang. Alat musik ini dibuat dari kayu lokal yang ringan namun kuat seperti telur, bandaran, wenang, kakinik kayu cempaka, dan yang mempunyai konstruksi fiber paralel. Nama kolintang berasal dari suaranya: tong (nada rendah), ting (nada tinggi) dan tang (nada biasa). Dalam bahasa daerah, ajakan 'Mari kita lakukan TONG TING TANG' adalah: ' Mangemo kumolintang'. Ajakan tersebut akhirnya berubah menjadi kata kolintang.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipukul",
-    image : "kolintang.jpg",
+    image : "placeholder.jpg",
     imagecover: "kolintang-cover.jpg",
     location : "maluku",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -358,7 +358,7 @@ angular.module('inklusik.services', [])
   {
     description : " Alat musik ini terbuat dari bambu. Alat musik ini dimainkan lebih dari 30 orang dalam bentuk akord suara 1,2,3,4. Cara mempergunakannya sama dengan di dunia barat, sebab memiliki suara sopran, alto, tenor dan bass. Suling ini merupakan alat musik impor yang mendapat pengaruh bangsa Portugis dan Belanda yang sangat digemari masyarakat tradisional. Alat musik ini dibuat dari seruas bambu yang salah satu ujungnya diberi penyekat sesuai dengan diameter suling yang dilengkapi dengan 6 lubang nada dan satu lubang tiup. Permainan musik ini ditampilkan pada saat penyambutan tamu, pengiring orkes, resepsi, dan pengiring lagu gerejawi. Selain itu, suling dapat dipadukan dengan alat musik tradisional lain dan alat musik modern.",
     howtoplay : "Alat musik ini dimainkan dengan cara ditiup",
-    image : "sulingmaluku.jpg",
+    image : "placeholder.jpg",
     imagecover: "sulingmaluku-cover.jpg",
     location : "maluku",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -367,7 +367,7 @@ angular.module('inklusik.services', [])
   },{
     description : "Sasando adalah sebuah alat instrumen petik musik. Instumen musik ini berasal dari pulau Rote, Nusa Tenggara Timur. Secara harfiah nama Sasando menurut asal katanya dalam bahasa Rote, sasandu, yang artinya alat yang bergetar atau berbunyi. Konon sasando digunakan di kalangan masyarakat Rote sejak abad ke-7. Bentuk sasando ada miripnya dengan instrumen petik lainnya seperti gitar, biola dan kecapi. Bagian utama sasando berbentuk tabung panjang yang biasa terbuat dari bambu. Lalu pada bagian tengah, melingkar dari atas ke bawah diberi ganjalan-ganjalan di mana senar-senar (dawai-dawai) yang direntangkan di tabung, dari atas kebawah bertumpu. Ganjalan-ganjalan ini memberikan nada yang berbeda-beda kepada setiap petikan senar. Lalu tabung sasando ini ditaruh dalam sebuah wadah yang terbuat dari semacam anyaman daun lontar yang dibuat seperti kipas. Wadah ini merupakan tempat resonansi sasando.",
     howtoplay : "Alat musik ini dimainkan dengan cara dipetik..",
-    image : "sasando.jpg",
+    image : "placeholder.jpg",
     imagecover: "sasando-cover.jpg",
     location : "nusa",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -376,7 +376,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "rebana adalah adalah gendang berbentuk bundar dan pipih. ini merupakan symbol kota bumiayu .terbuat Bingkai berbentuk lingkaran dari kayu yang dibubut, dengan salah satu sisi untuk ditepuk berlapis kulit kambing..",
     howtoplay : "dengan cara dipukul.",
-    image : "rebana.jpg",
+    image : "placeholder.jpg",
     imagecover: "rebana-cover.jpg",
     location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -385,7 +385,7 @@ angular.module('inklusik.services', [])
   },  {
     description : "Saluang adalah alat musik tradisional khas Minangkabau, Sumatera Barat. Yang mana alat musik tiup ini terbuat dari bambu tipis atau talang (Schizostachyum brachycladum Kurz). Orang Minangkabau percaya bahwa bahan yang paling bagus untuk dibuat saluang berasal dari talang untuk jemuran kain atau talang yang ditemukan hanyut di sungai[1]. Alat ini termasuk dari golongan alat musik suling, tapi lebih sederhana pembuatannya, cukup dengan melubangi talang dengan empat lubang. Panjang saluang kira-kira 40-60 cm, dengan diameter 3-4 cm.",
     howtoplay : "Keutamaan para pemain saluang ini adalah dapat memainkan saluang dengan meniup dan menarik napas bersamaan, sehingga peniup saluang dapat memainkan alat musik itu dari awal dari akhir lagu tanpa putus. Cara pernapasan ini dikembangkan dengan latihan yang terus menerus. Teknik ini dinamakan juga sebagai teknik manyisiaha n angok (menyisihkan napas).",
-    image : "saluang.jpg",
+    image : "placeholder.jpg",
     imagecover: "saluang-cover.jpg",
     location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -394,7 +394,7 @@ angular.module('inklusik.services', [])
   },  {
     description : "Serunai, atau juga disebut puput serunai, adalah nama alat musik tiup yang dikenal di Indonesia sebagai alat musik tradisional masyarakat Minang. Bagian unik dari serunai adalah ujungnya yang mengembang, berfungsi untuk memperbesar volume suara.Bahan untuk membuat sebuah puput serunai tradisional Minang terdiri dari batang padi, kayu atau bambu, tanduk kerbau atau daun kelapa. Bagian penata bunyi serunai terbuat dari kayu capo ringkik atau dari bambu talang yang ukurannya sebesar ibu jari tangan. Capo ringkik adalah sejenis tanaman perdu yang mempunyai lapisan kayu keras namun mempunyai bagian dalam yang lunak, sehingga mudah untuk dilubangi. Kayu yang panjangnya 20 cm tersebut diberi 4 lubang yang berselisih jarak 2,5 cm, yang berfungsi memberi beda tinggi rendah nada.Puput adalah bagian yang ditiup pada alat musik serunai, biasa terbuat dari kayu, bambu talang, atau batang padi tua. Bagian ini disambungkan oleh bagian penyambung yang berfungsi sebagai pangkal puput tersebut. Panjangnya sekitar 5 cm dan terbuat dari kayu keras. Penyambung ini dilubangi untuk saluran udara tiup, yang bersambungan dengan poros badan dan poros corong. Di bagian belakang, bagian penyambung ini juga berbentuk corong, dengan diameter 2 cm.Bagian corong adalah bagian ujung serunai yang dibentuk membesar seperti ujung akhir alat musik trompet. Fungsi bagian ini adalah untuk memperkeras atau memperbesar volume suara. Bagian ini biasanya terbuat dari kayu, terutama kayu gabus, dari tanduk kerbau yang secara alamiah telah berbentuk lancip mengembang, ataupun dari daun kelapa yang dililitkan. Panjangnya sekitar 10 sampai 12 cm, dengan garis tengah 6 cm di bagian yang mengembang.",
     howtoplay : "ditiup",
-    image : "serunai.jpg",
+    image : "placeholder.jpg",
     imagecover: "serunai-cover.jpg",
     location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -403,7 +403,7 @@ angular.module('inklusik.services', [])
   },  {
     description : "Talempong adalah sebuah alat musik pukul tradisional khas suku Minangkabau. Bentuknya hampir sama dengan instrumen bonang dalam perangkat gamelan. Talempong dapat terbuat dari kuningan, namun ada pula yang terbuat dari kayu dan batu. Saat ini talempong dari jenis kuningan lebih banyak digunakan. Talempong berbentuk lingkaran dengan diameter 15 sampai 17,5 sentimeter, pada bagian bawahnya berlubang sedangkan pada bagian atasnya terdapat bundaran yang menonjol berdiameter lima sentimeter sebagai tempat untuk dipukul. Talempong memiliki nada yang berbeda-beda. Bunyinya dihasilkan dari sepasang kayu yang dipukulkan pada permukaannya.",
     howtoplay : "Dipukul",
-    image : "talempong.jpg",
+    image : "placeholder.jpg",
     imagecover: "talempong-cover.jpg",
     location : "sumatera",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],
@@ -412,7 +412,7 @@ angular.module('inklusik.services', [])
   }, {
     description : "Tifa mirip dengan alat musik gendang yang dimainkan dengan cara dipukul. Alat musik ini terbuat dari sebatang kayu yang dikosongi atau dihilangi isinya dan pada salah satu sisi ujungnya ditutupi, dan biasanya penutupnya digunakan kulit rusa yang telah dikeringkan untuk menghasilkan suara yang bagus dan indah. Bentuknyapun biasanya dibuat dengan ukiran. Setiap suku di Maluku dan Papua memiliki tifa dengan ciri khas nya masing-masing.",
     howtoplay : "dengan cara dipukul.",
-    image : "tifa.jpg",
+    image : "placeholder.jpg",
     location : "papua",
     imagecover: "tifa-cover.jpg",
     melody : [ "da", "mi", "na", "ti", "la", "da2" ],

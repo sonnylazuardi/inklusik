@@ -57,6 +57,11 @@ angular.module('inklusik.routes', ['simpleLogin'])
       templateUrl: "templates/choose.html",
       controller: 'ChooseCtrl'
     },
+    'stream':{
+      url: "/stream",
+      templateUrl: "templates/stream.html",
+      controller: 'StreamCtrl'
+    }
   })
   
   .config(function($stateProvider) {

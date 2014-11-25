@@ -376,6 +376,11 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
+.controller('StreamCtrl', function($scope){
+
+})
+
+
 .controller('SearchCtrl', function($scope, Instruments){
   $scope.instruments = Instruments.instruments;
 });
