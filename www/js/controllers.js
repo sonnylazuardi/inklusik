@@ -440,6 +440,7 @@ angular.module('inklusik.controllers', [])
   $scope.author = "Luthfi Hamid";
   $scope.partitur = Partiturs.find(1);
   $scope.liked = false;
+  $scope.progress = 30;
   $scope.next = function(){
 
   }
