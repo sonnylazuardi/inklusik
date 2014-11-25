@@ -209,11 +209,9 @@ angular.module('inklusik.services', [])
     },
   ];
   self.find = function(id) {
-        console.log(id);
-        var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
-        console.log(wew);
-        return wew;
-    }
+    var wew =  _.findWhere(self.partiturs, {id : parseInt(id)});
+    return wew;
+  }
   return self;
 })
 

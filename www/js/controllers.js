@@ -108,7 +108,9 @@ angular.module('inklusik.controllers', [])
   var timer;
   $scope.changeSong = function() {
     $scope.time = 0;
-    console.log($scope.settings.currentSong);
+    $scope.song.time = 0;
+    $scope.song.tempo = $scope.settings.tempo;
+    $scope.song = $scope.settings.currentSong;
     $scope.isPlaying = false;
     $scope.control();
   };
@@ -144,6 +146,10 @@ angular.module('inklusik.controllers', [])
   }
   $scope.isPlaying = false;
   $scope.control = function() {
+    $scope.controlPlay();
+    $scope.last_songEvent.$add({state: $scope.isPlaying, time: $scope.time});
+  };
+  $scope.controlPlay = function() {
     $scope.isPlaying = !$scope.isPlaying;
     if ($scope.isPlaying) {
       if ( angular.isDefined(timer2) ) return;
@@ -155,14 +161,38 @@ angular.module('inklusik.controllers', [])
       }  
     }
   };
+  
   $scope.tempoChange = function() {
     if ($scope.isPlaying) {
       // console.log($scope.settings.tempo);
       $scope.settings.tempo = 400 - ($scope.settings.tempoVal / 100 * 400);
       $interval.cancel(timer2);
       timer2 = $interval($scope.doTimer, $scope.settings.tempo);
+      //remote
+      $scope.song.tempo = $scope.settings.tempo;
     }
-  }
+  };
+
+  var song = fbutil.syncObject('song');
+  song.$bindTo($scope, 'song');
+  song.$loaded(function() {
+    if ($scope.song.id != null) {
+      $scope.usingPartitur = true;
+      $scope.settings.currentSong = angular.copy($scope.song);
+      $scope.changeSong();
+    }
+  });
+
+  $scope.last_songEvent = fbutil.syncArray(['song', 'events'], {limit: 1});
+  $scope.last_songEvent.$watch(function() {
+    var object = $scope.last_songEvent[0];
+    if (object) {
+      console.log(object);
+      $scope.isPlaying = !object.state;
+      $scope.time = object.time;
+      $scope.controlPlay();
+    }
+  });
 })
 
 .controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval, $ionicScrollDelegate) {
