@@ -488,6 +488,11 @@ angular.module('inklusik.controllers', [])
     }
   }
 
+  $scope.play = function() {
+    if ( angular.isDefined(timer2) ) return;
+    timer = $interval($scope.doTimer, 150); 
+  }
+
   $scope.next = function(){
 
   }
