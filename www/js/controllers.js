@@ -46,17 +46,17 @@ angular.module('inklusik.controllers', [])
     var melody = $scope.last_melody[0];
     if (melody && $scope.profile) {
       if ($scope.profile.uid != melody.uid) {
-        Player(melody.name, $scope.instrument.location, melody.melody);
+        Player(melody.name, melody.location, melody.melody);
       }
     }
   });
   $scope.playSound = function(melody) {
     $scope.selected = melody;
     Player(name, $scope.instrument.location, melody);
-    $scope.harmony.$add({melody: melody, name: name, uid: $scope.profile.uid});
+    $scope.harmony.$add({melody: melody, name: name, location: $scope.instrument.location, uid: $scope.profile.uid});
     //record
     if ($scope.isRecording) {
-      $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time});
+      $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time, location: $scope.instrument.location});
     }
   }
   $scope.sound = function(melody) {
@@ -464,11 +464,30 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
-.controller('StreamCtrl', function($scope,Partiturs){
+.controller('StreamCtrl', function($scope,Partiturs, $stateParams, fbutil, Player){
   $scope.author = "Luthfi Hamid";
   $scope.partitur = Partiturs.find(1);
   $scope.liked = false;
   $scope.progress = 30;
+
+  $scope.stream = fbutil.syncObject(['record', $stateParams.id]);
+  $scope.stream.$loaded(function() {
+    console.log($scope.stream);
+  });
+
+  var timer;
+  $scope.time = 0;
+  $scope.doTimer = function() {
+    $scope.time++;
+    var find = _.findWhere($scope.stream.harmony, {time: $scope.time});
+    if (find) {
+      Player(find.instrument, find.location, find.melody);
+    }
+    if ($scope.time > (_.last($scope.stream.harmony).time * 5 ) {
+      $scope.time = 0;
+    }
+  }
+
   $scope.next = function(){
 
   }
