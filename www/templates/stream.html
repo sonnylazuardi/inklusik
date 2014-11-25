@@ -1,9 +1,22 @@
 <ion-view title="LISTEN MUSIC">
   <ion-content>
+    <div class="stream-title">
+      <h3>{{partitur.title}}</h3>
+      <h4>{{author}}</h4>
+      <div class="range range-energized">
+        <input disabled type="range" name="volume" ng-model="progress">
+      </div>
+    </div>
     <div class="row">
       <div class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-skipbackward"></i></button></div>
-      <div class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-heart"></i></button></div>
-      <div class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-skipforward"></i></button></div>
+      <div style="text-align:center;" class="col">
+        <button ng-click="toggleLike()" class="button button-outline button-balance">
+          <i  ng-show="liked==false" class="icon ion-ios7-heart"></i>
+          <i  ng-show="liked==true" style="color:#ED2626" class="icon ion-ios7-heart"></i>
+
+        </button>
+      </div>
+      <div style="text-align:right;" class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-skipforward"></i></button></div>
     </div>
     <div ng-repeat="user in onlineusers">
       <div ng-class="{'item': true, 'item-avatar': true, 

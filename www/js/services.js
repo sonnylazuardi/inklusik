@@ -130,8 +130,9 @@ angular.module('inklusik.services', [])
     }, {
       id: 3,
       title: 'Apuse',
+      img: 'apuse.jpg',
       source: 'Papua',
-      lyric: 'Apuse kokondao yarabe soren Doreri Doreri<br>Wuf lenso ba ri ne ma ba ki Pa se<br>Apuse kokondao yarabe soren Doreri<br>Wuf lenso ba ni ne ma ba ki pa se<br>Rafabye aswarakwar rafabye, aswarakwar',
+      lyric: '<p>Apuse kokondao yarabe soren Doreri Doreri<br>Wuf lenso ba ri ne ma ba ki Pa se<br>Apuse kokondao yarabe soren Doreri<br>Wuf lenso ba ni ne ma ba ki pa se<br>Rafabye aswarakwar rafabye, aswarakwar</p>',
       melody: [
         '5', '1', '3', '0', '2', '3', '2', '1', '0', '5', '1', '3', '0', '3', '2', '3', '4', '2', '0', '5', '1', '2', '4', '5', '0', '4', '3', '2', '3', '0', '2', '1', '0', '0', '0', '1', '0', '5', '1', '3', '0', '2', '3', '0', '2', '1', '0', '5', '1', '3', '0', '3', '2', '3', '4', '2', '0', '5', '1', '2', '0', '4', '5', '0', '4', '3', '0', '2', '3', '0', '2', '1', '0', '0', '0', '0', '5', '1', '4', '3', '0', '0', '0', '0', '5', '7', '2', '1', '1', '0', '0', '0', '0', '5', '1', '4', '3', '0', '0', '0', '0', '5', '7', '2', '1', '0', '0', '0', '1', '0'
       ],
@@ -141,9 +142,9 @@ angular.module('inklusik.services', [])
       title: 'Anak Kambing Saya',
       img: 'anak-kambing-saya.jpg',
       source: 'Nusa Tenggara Timur',
-      lyric: 'Mana di mana anak kambing saya<br>Anak kambing tuan ada di pohon waru<br>Mana di mana jantung hati saya<br>jantung hati tuan ada di kampung baru<br>Caca marica hehei, caca marica hehei<br>Caca marica ada di kampung baru',
+      lyric: '<p>Mana di mana anak kambing saya<br>Anak kambing tuan ada di pohon waru<br>Mana di mana jantung hati saya<br>jantung hati tuan ada di kampung baru<br>Caca marica hehei, caca marica hehei<br>Caca marica ada di kampung baru</p>',
       melody: [
-        '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '2', '2', '3', '4', '3', '2', '1', '0', '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4', '6', '6', '3', '3', '3', '3', '3', '5', '5', '2', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4',
+        '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '2', '2', '3', '4', '3', '2', '1', '0', '1', '1', '1', '1', '1', '0', '7', '6', '1', '7', '6', '5', '0', '5', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4', '6', '6', '3', '3', '3', '3', '3', '5', '5', '2', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0', '4', '4', '4', '4', '4', '6', '6', '3', '3', '3', '3', '3', '5', '2', '2', '2', '2', '2', '1', '2', '3', '4', '3', '2', '1', '0'
       ],
       tick: '4/4',
     }, {
@@ -151,8 +152,9 @@ angular.module('inklusik.services', [])
       title: 'Buka Pintu',
       img: 'buka-pintu.jpg',
       source: 'Maluku',
+      lyric: '<p>Buka pintu buka pintu beta mau mau masuke<br>Sio lah nona nona beta adalah dimukae<br>Beta panggil tidak menyahut<br>buka pintu juga tidak mau<br>Sio lah nona beta mau masuke hehe hehe<br>Beta panggil tidak menyahut buka pintu juga tidak mau<br>Buka pintu beta mau masuke</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '5', '4', '3', '5', '1', '3', '5', '1', '0', '3', '5', '4', '4', '4', '3', '4', '3', '2', '0', '0', '4', '3', '2', '4', '7', '2', '5', '7', '0', '5', '5', '5', '0', '0', '6', '5', '4', '3', '0', '0', '5', '5', '6', '6', '6', '5', '6', '5', '4', '0', '0', '4', '0', '0', '6', '6', '5', '5', '5', '4', '3', '0', '0', '4', '3', '5', '2', '0', '0', '2', '3', '4', '4', '3', '2', '3', '0', '1', '3', '0', '5', '7', '0', '0', '5', '5', '6', '6', '6', '5', '6', '5', '4', '0', '0', '4', '0', '0', '6', '6', '5', '5', '5', '4', '3', '0', '0', '4', '3', '5', '2', '0', '0', '2', '3', '4', '4', '3', '7', '0', '2', '1', '0', '0', '0', '1', '0', '0', '0'
       ],
       tick: '4/4',
     }, {
@@ -160,8 +162,9 @@ angular.module('inklusik.services', [])
       title: 'Burung Kakatua',
       img: 'burung-kakatua.jpg',
       source: 'Maluku',
+      lyric: '<p>Burung Kakak Tua. Hinggap di jendela<br>Nenek sudah tua. Giginya tinggal dua<br>Tredung, tredung, terdung tra la la<br>Tredung, tredung, terdung tra la la<br>Tredung, tredung, terdung tra la la<br>Tredung, tredung, terdung tra la la<br>Burung kakak tua.</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '5', '5', '3', '1\'', '3', '2', '0', '3', '4', '6', '5', '4', '3', '5', '5', '3', '1\'', '3', '2', '0', '7', '6', '1\'', '4', '3', '2', '1', '3', '5', '3', '5', '5', '6', '6', '6', '6', '3', '5', '3', '5', '5', '6', '6', '6', '6', '3', '5', '3', '5', '5', '6', '6', '6', '6', '3', '5', '3', '5', '5', '6', '6', '6', '6', '1\'', '7', '5', '6', '7', '1\'', '0', '0', '0'
       ],
       tick: '4/4',
     }, {
@@ -169,8 +172,9 @@ angular.module('inklusik.services', [])
       title: 'Ilir-Ilir',
       img: 'ilir-ilir.jpg',
       source: 'Jawa Tengah',
+      lyric: '<p>Lir ilir lir ilir tandure wong sumilir<br>Tak iji royo-royo tak sengguh penganten anyar<br>Cah angon cah angon penekna blimbing kuwi<br>Lunyu lunyu peneken kanggo mbasuh dodotira dodotira dodotira kumitir bedah ing pinggir<br>Dondomana jrumatana kanggo seba mengko sore<br>Mumpung padang rembulane mumpung jembar kalangane<br>Sun surakka surak hiyo</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '5', '5', '1\'', '1\'', '6', '5', '5', '5', '5', '1\'', '1\'', '6', '6', '3', '6', '5', '5', '2', '3', '1', '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '5', '5', '1\'', '1\'', '6', '5', '5', '5', '5', '1\'', '1\'', '6', '6', '3', '6', '5', '3', '2', '3', '1', '1\'', '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '1\'', '2\'', '3\'', '1\'', '1\'', '1\'', '5', '5', '1\'', '1\'', '6', '5', '5', '5', '5', '5', '1\'', '1\'', '6', '6', '3', '6', '5', '3', '2', '3', '1', '1', '2', '3', '5', '3', '2', '3', '1', '1', '2', '3', '5', '3', '2', '3', '1', '1\'', '1\'', '5', '6', '5', '6', '1\'', '3', '6', '5', '0', '3', '2', '1', '2', '3', '2', '1', '0', '0'
       ],
       tick: '4/4',
     }, {
@@ -178,8 +182,9 @@ angular.module('inklusik.services', [])
       title: 'Kicir-Kicir',
       img: 'kicir-kicir.jpg',
       source: 'Jakarta',
+      lyric: '<p>Kicir kicir ini lagunya lagu lama ya tuan dari Jakarta<br>Saya menyanyi ya tuan memang sengaja untuk menghibur menghibur hati nan duka<br>Burung dara burung merpati terbang cepat ya tuan tiada tara<br>Bilalah kita ya tuan suka menyanyi badanlah sehat ya tuan hati gembira<br>Buah mangga enak rasanya si manalagi ya tuan paling ternama<br>Siapa saya ya tuan rajin bekerja pasti menjadi menjadi warga berguna</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '0', '3', '3', '5', '3', '0', '2', '2', '2', '4', '3', '2', '0', '3', '3', '3', '5', '6', '0', '5', '3', '3', '0', '1', '1', '1', '6', '1', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '1', '2', '6', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '7', '6', '5', '0', '0', '3', '3', '5', '3', '0', '2', '2', '2', '4', '3', '2', '0', '3', '3', '3', '5', '6', '0', '5', '3', '3', '0', '1', '1', '1', '6', '1', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '1', '2', '6', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '7', '6', '5', '0', '0', '3', '3', '5', '3', '0', '2', '2', '2', '4', '3', '2', '0', '3', '3', '3', '5', '6', '0', '5', '3', '3', '0', '1', '1', '1', '6', '1', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '1', '2', '6', '0', '0', '6', '6', '1', '2', '3', '0', '1', '1', '1', '0', '5', '5', '7', '6', '5', '0'
       ],
       tick: '4/4',
     }, {
@@ -187,8 +192,9 @@ angular.module('inklusik.services', [])
       title: 'Manuk Dadali',
       img: 'manuk-dadali.jpg',
       source: 'Jawa Barat',
+      lyric: '<p>Mesat ngapung luhur jauh di awanga wang<br>Meberkeun janjangna bangun taya karingrang<br>Kukuna ranggaos rejeung pamatukna ngeluk<br>Ngapak mega bari hibernatarik nyuruwuk<br>Sahaanubisa nyusul kana tandangna gandang jeung partentang taya bandingannana<br>Dipika gimir dipika serab ku sasama<br>Tayakarempan ka sieun leber wawanenna Manuk Dadali</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
+        '0', '5', '3', '4', '5', '7', '1\'', '7', '1\'', '3', '4', '5', '5', '5', '0', '5', '3', '4', '5', '7', '1\'', '7', '1\'', '3', '4', '5', '4', '4', '0', '5', '4', '3', '1', '7', '1', '3', '4', '5', '1', '3', '4', '4', '4', '0', '5', '4', '3', '1', '7', '1', '3', '4', '5', '1', '3', '1', '1', '1', '0', '5', '3', '4', '5', '7', '1\'', '7', '1\'', '3', '4', '5', '5', '5', '0', '5', '3', '4', '5', '7', '1\'', '7', '1\'', '3', '4', '5', '4', '4', '0', '5', '4', '3', '1', '7', '1', '3', '4', '5', '1', '3', '4', '4', '4' ,'0', '5', '4', '3', '1', '7', '1', '3', '4', '5', '1', '3', '1', '1', '1', '0', '0', '1', '4', '5', '6', '4', '5'
       ],
       tick: '4/4',
     }, {
@@ -196,17 +202,9 @@ angular.module('inklusik.services', [])
       title: 'Surilang',
       img: 'surilang.jpg',
       source: 'Jakarta',
+      lyric: '<p>Buah semangka makanan raja,<br>buah kenari keras kulitnya<br>Buah semanggka makanan raja,<br>hei dayang disayang<br>Bertemu muka tidak sengaja aduh sayang<br>Hei sayang aduh sayang kalau dicari susah dapatnya<br>Di sana gunung di sini gunung,<br>ditengah-tengahnya bunga melati<br>Di sana gunung di sini gunung<br>hei sayang disayang<br>Di sana bingung di sini bingung aduh sayang<br>Hei sayang aduh sayang yang karna tergoda si jantung hati<br>Layang-layang terbang melayang<br>jatuh dipengki daimbil orang<br>Layang-layang terbang melayang<br>hei sayang-disayang<br>Siapa bilang tidak disayang aduh sayang<br>Hei sayang aduh sayang siang malam terbayang-bayang</p>',
       melody: [
-        'da2', 'la', 'da2', 'la',  'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', '0', 'da2', 'la', 'da2', 'la', 'ti', 'na', 'na', '0', 'mi', 'da', 'mi', 'da', 'mi', 'na', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', '0', 'da2', '0', 'la', '0', 'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0'
-      ],
-      tick: '4/4',
-    },
-    {
-      id: 11,
-      title: 'Suling Sunda',
-      source: 'Jawa Barat',
-      melody: [
-        'na', '0', 'ti', 'ti', 'na', 'ti', 'la', 'da2', 'ti', 'la', 'da2', '0', 'da2', 'la', 'da2', 'la'
+        '0', '5', '5', '1', '2', '3', '4', '3', '4', '6', '5', '0', '0', '0', '0', '5', '5', '1', '2', '3', '4', '3', '4', '6', '5', '0', '0', '0', '0', '5', '5', '1', '2', '3', '4', '3', '4', '6', '5', '0', '0', '0', '0', '2', '2', '2', '4', '3', '1', '0', '0', '0', '0', '6', '6', '6', '7', '7', '4', '3', '4', '5', '6', '6', '5', '4', '3', '2', '0', '0', '2', '2', '3', '4', '5', '5', '5', '3', '6', '5', '3', '6', '5', '0', '5', '3', '1', '5', '0', '2', '2', '2', '2', '2', '2', '2', '4', '3', '1', '0', '0', '0', '0', '3', '4', '5', '3', '1', '6', '5', '0', '0', '0'
       ],
       tick: '4/4',
     }];

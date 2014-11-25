@@ -223,6 +223,7 @@ angular.module('inklusik.controllers', [])
       $scope.controlPlay();
     }
   });
+<<<<<<< HEAD
 
   $scope.activeRec = {};
   $scope.isRecorded = false;
@@ -239,6 +240,15 @@ angular.module('inklusik.controllers', [])
     $scope.activeRec = newRec;
     $scope.isRecorded = true;
   }
+=======
+  
+  $scope.isRecording = false;
+  $scope.record = function(){
+    $scope.isRecording = !$scope.isRecording;
+  };
+
+
+>>>>>>> e83655042530c5e23e7908f0bbcc72dab38ac14d
 })
 
 .controller('PlayGuestCtrl', function($scope, simpleLogin, Player, fbutil, $stateParams, Instruments, Shake, Partiturs, $interval, $ionicScrollDelegate) {
@@ -461,8 +471,20 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
-.controller('StreamCtrl', function($scope){
+.controller('StreamCtrl', function($scope,Partiturs){
+  $scope.author = "Luthfi Hamid";
+  $scope.partitur = Partiturs.find(1);
+  $scope.liked = false;
+  $scope.progress = 30;
+  $scope.next = function(){
 
+  }
+  $scope.prev = function(){
+
+  }
+  $scope.toggleLike = function(){
+    $scope.liked = !$scope.liked;
+  }
 })
 
 
