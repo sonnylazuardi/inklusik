@@ -48,6 +48,8 @@ angular.module('inklusik.controllers', [])
       if ($scope.profile.uid != melody.uid) {
         Player(melody.name, melody.location, melody.melody);
         if ($scope.isRecording) {
+          // console.log('record other');
+          // console.log(melody);
           $scope.activeRec.push({melody: melody.melody, name: melody.name, uid: melody.uid, user: melody.user, time: $scope.time, location: melody.location});
         }
       }
@@ -518,7 +520,7 @@ angular.module('inklusik.controllers', [])
   }
   $scope.streamItem = fbutil.syncArray(['record', $stateParams.id, 'harmony']);
   $scope.streamItem.$loaded(function() {
-    var last = _.last($scope.streamItem);
+    var last = _.max($scope.streamItem, function(item) { return item.time });
     $scope.last_time = last.time + 10;
     $scope.users = _.uniq(_.pluck($scope.streamItem, 'user'), function(item) {
       return item.name;
