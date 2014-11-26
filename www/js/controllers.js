@@ -421,7 +421,9 @@ angular.module('inklusik.controllers', [])
     console.log('load');
     requireUser().then(function(user) {
       var profile = fbutil.syncObject(['users', user.uid]);
-      profile.$bindTo($scope, 'profile');
+      profile.$bindTo($scope, 'profile').then(function(unbind) {
+        $scope.unbind = unbind;
+      });
     });
   }
   $scope.load();
@@ -431,8 +433,9 @@ angular.module('inklusik.controllers', [])
       console.log('exit');
       simpleLogin.logout();
       //reset profile
+      $scope.unbind();
       $scope.profile = {
-        $id:0,
+        $id: 0,
         avatar:'//:0'
       };
     }
