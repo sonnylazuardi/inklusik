@@ -396,8 +396,9 @@ angular.module('inklusik.controllers', [])
       .then(function( user ) {
         console.log(user);
         createProfile(user.uid, user.displayName, user.thirdPartyUserData.picture.data.url, 0).then(function() {
+          $rootScope.hide = true;
           $rootScope.$broadcast('afterlogin');
-          $state.go('browse');
+          // $state.go('browse');
         });
       }, function(err) {
         $scope.err = errMessage(err);
@@ -405,7 +406,7 @@ angular.module('inklusik.controllers', [])
   }
   $scope.guest = function() {
     $rootScope.hide = true;
-    $state.go('browse');
+    // $state.go('browse');
   }
   function errMessage(err) {
     return angular.isObject(err) && err.code? err.code : err + '';
