@@ -480,11 +480,8 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
-.controller('StreamCtrl', function($scope,Partiturs, $stateParams, fbutil, Player, $interval){
-  $scope.author = "Luthfi Hamid";
-  $scope.partitur = Partiturs.find(1);
+.controller('StreamCtrl', function($scope,Partiturs, $stateParams, fbutil, Player, $interval, $cordovaSocialSharing, $location){
   $scope.liked = false;
-  $scope.progress = 30;
   $scope.isPlaying = false;
 
   $scope.stream = fbutil.syncObject(['record', $stateParams.id]);
@@ -524,7 +521,13 @@ angular.module('inklusik.controllers', [])
     // $scope.first_time = first.time - 5;
   });
   $scope.share = function(){
-
+    $cordovaSocialSharing
+    .shareViaFacebook("Listen to my stream on inklusik ", null, "http://sonnylazuardi.github.com/inklusik/www/#"+$location.path())
+    .then(function(result) {
+      alert('Sharing succeed.');
+    }, function(err) {
+      alert('Sharing failed.');
+    });
   }
   $scope.toggleLike = function(){
     $scope.liked = !$scope.liked;
