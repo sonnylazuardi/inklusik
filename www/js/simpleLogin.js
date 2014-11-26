@@ -16,6 +16,7 @@ angular.module('simpleLogin', ['firebase', 'firebase.utils'])
       var listeners = [];
 
       function statusChange() {
+        console.log('status change');
         fns.getUser().then(function(user) {
           fns.user = user || null;
           angular.forEach(listeners, function(fn) {
@@ -43,6 +44,8 @@ angular.module('simpleLogin', ['firebase', 'firebase.utils'])
         },
 
         logout: function() {
+          console.log('logout');
+          console.log(auth);
           auth.$logout();
         },
 

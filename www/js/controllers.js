@@ -101,9 +101,6 @@ angular.module('inklusik.controllers', [])
     failure: function() {},                                        //callback when watching/getting acceleration fails. "this" will be the "shake" object.
   });
   shake.startWatch();
-  $scope.$on('$destroy', function() {
-    shake.stopWatch();
-  });
 
     //Partitiur
   $scope.usingPartitur = false;
@@ -236,6 +233,7 @@ angular.module('inklusik.controllers', [])
     $interval.cancel(timer3);
     timer3 = undefined;
     unwatch();
+    shake.stopWatch();
   });
 
   //Record sound
@@ -271,8 +269,6 @@ angular.module('inklusik.controllers', [])
   
   $scope.playSound = function(melody) {
     $scope.selected = melody;
-    var userRef = fbutil.ref('presences', $scope.user.uid);
-    userRef.update({sounded: true});
     Player(name, $scope.instrument.location, melody);
   }
   $scope.sound = function(melody) {
@@ -291,8 +287,6 @@ angular.module('inklusik.controllers', [])
   }
   $scope.stop = function() {
     $scope.holded = false;
-    var userRef = fbutil.ref('presences', $scope.user.uid);
-    userRef.update({sounded: false});
     if (timer) {
       $interval.cancel(timer);
       timer = null;
@@ -316,6 +310,10 @@ angular.module('inklusik.controllers', [])
   });
   shake.startWatch();
   $scope.$on('$destroy', function() {
+    $interval.cancel(timer);
+    timer = undefined;
+    $interval.cancel(timer2);
+    timer2 = undefined;
     shake.stopWatch();
   });
 
@@ -427,10 +425,15 @@ angular.module('inklusik.controllers', [])
     if ($scope.profile) {
       console.log('exit');
       simpleLogin.logout();
+      //reset profile
+      $scope.profile = {
+        $id:0,
+        avatar:'//:0'
+      };
     }
     console.log('keluar');
     $rootScope.hide = false;
-    $state.go('login');
+    // $state.go('login');
   }
   $scope.exit = function() {
     navigator.app.exitApp();
