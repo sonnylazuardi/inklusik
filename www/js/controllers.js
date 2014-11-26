@@ -56,7 +56,7 @@ angular.module('inklusik.controllers', [])
     $scope.harmony.$add({melody: melody, name: name, location: $scope.instrument.location, uid: $scope.profile.uid});
     //record
     if ($scope.isRecording) {
-      $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, time: $scope.time, location: $scope.instrument.location});
+      $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, user: $scope.profile, time: $scope.time, location: $scope.instrument.location});
     }
   }
   $scope.sound = function(melody) {
@@ -195,7 +195,7 @@ angular.module('inklusik.controllers', [])
   $scope.song = fbutil.syncObject('song');
   $scope.songId = 0;
   // song.$bindTo($scope, 'song');
-  $scope.song.$watch(function() {
+  var unwatch = $scope.song.$watch(function() {
     console.log($scope.song.id);
     if ($scope.song) {
       if ($scope.songId != $scope.song.id) {
@@ -228,19 +228,35 @@ angular.module('inklusik.controllers', [])
   $scope.activeRec = {};
   $scope.isRecording = false;
 
+  $scope.$on('$destroy', function() {
+    $interval.cancel(timer);
+    timer = undefined;
+    $interval.cancel(timer2);
+    timer2 = undefined;
+    $interval.cancel(timer3);
+    timer3 = undefined;
+    unwatch();
+  });
+
   //Record sound
   $scope.record = function() {
-    var recRef = fbutil.ref('record');
-    var newRec = recRef.push({
-      title: $scope.settings.currentSong.title,
-      user: $scope.user.uid,
-      avatar: $scope.profile.avatar,
-      name: $scope.profile.name,
-      harmony: []
-    });  
-    console.log(newRec);
-    $scope.activeRec = fbutil.ref('record', newRec.name(), 'harmony');
-    $scope.isRecording = true;
+    $scope.isRecording = !$scope.isRecording;
+    if ($scope.isRecording) {
+      var recRef = fbutil.ref('record');
+      var newRec = recRef.push({
+        title: $scope.settings.currentSong.title,
+        user: $scope.user.uid,
+        avatar: $scope.profile.avatar,
+        name: $scope.profile.name,
+        like: 0,
+        harmony: []
+      });  
+      console.log(newRec);
+      $scope.activeRec = fbutil.ref('record', newRec.name(), 'harmony');
+      $scope.isRecording = true;
+    } else {
+      alert('Stream successfully saved');
+    }
   }
 })
 
@@ -464,7 +480,7 @@ angular.module('inklusik.controllers', [])
   $scope.partiturid = Partiturs.find($stateParams.id);
 })
 
-.controller('StreamCtrl', function($scope,Partiturs, $stateParams, fbutil, Player){
+.controller('StreamCtrl', function($scope,Partiturs, $stateParams, fbutil, Player, $interval){
   $scope.author = "Luthfi Hamid";
   $scope.partitur = Partiturs.find(1);
   $scope.liked = false;
@@ -478,30 +494,59 @@ angular.module('inklusik.controllers', [])
 
   var timer;
   $scope.time = 0;
+  $scope.last_time = 0;
+  $scope.percent = 0;
   $scope.doTimer = function() {
     $scope.time++;
-    var find = _.findWhere($scope.stream.harmony, {time: $scope.time});
-    if (find) {
-      Player(find.instrument, find.location, find.melody);
+    var find = _.findWhere($scope.streamItem, {time: $scope.time});
+    
+    if ($scope.last_time > 0) {
+      $scope.percent = Math.round($scope.time / $scope.last_time * 100);
     }
-    if ($scope.time > (_.last($scope.stream.harmony).time * 5 ) {
+    
+    if (find) {
+      console.log('bunyi');
+      Player(find.name, find.location, find.melody);
+    }
+    if ($scope.time > $scope.last_time) {
       $scope.time = 0;
     }
   }
-  $scope.next = function(){
-
-  }
-  $scope.prev = function(){
+  $scope.streamItem = fbutil.syncArray(['record', $stateParams.id, 'harmony']);
+  $scope.streamItem.$loaded(function() {
+    var last = _.last($scope.streamItem);
+    $scope.last_time = last.time + 10;
+    $scope.users = _.uniq(_.pluck($scope.streamItem, 'user'), function(item) {
+      return item.name;
+    });
+    console.log($scope.users);
+    // var first = _.first($scope.streamItem);
+    // $scope.first_time = first.time - 5;
+  });
+  $scope.share = function(){
 
   }
   $scope.toggleLike = function(){
     $scope.liked = !$scope.liked;
+    if ($scope.liked) {
+      $scope.stream.like++;
+      $scope.stream.$save();
+    } else {
+      $scope.stream.like--;
+      $scope.stream.$save();
+    }
   }
   $scope.togglePlay = function(){
     $scope.isPlaying = !$scope.isPlaying;
     if ($scope.isPlaying){
-       if ( angular.isDefined(timer2) ) return;
-        timer = $interval($scope.doTimer, 150); 
+      // $scope.time = $scope.first_time;
+      if ( angular.isDefined(timer) ) return;
+      timer = $interval($scope.doTimer, 150); 
+    } else {
+      if (angular.isDefined(timer)) {
+        $interval.cancel(timer);
+        timer = undefined;
+      }
     }
   }
 })

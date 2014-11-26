@@ -4,34 +4,29 @@
       <h3>{{stream.title}}</h3>
       <h4>{{stream.name}}</h4>
       <div class="range range-energized">
-        <input disabled type="range" name="volume" ng-model="progress">
+        <input disabled type="range" name="volume" ng-model="percent">
       </div>
     </div>
     <div class="row">
-      <div class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-skipbackward"></i></button></div>
-      <div style="text-align:center;" class="col">
+      <div class="col center">
         <button ng-click="toggleLike()" class="button button-outline button-balance">
           <i  ng-show="liked==false" class="icon ion-ios7-heart"></i>
           <i  ng-show="liked==true" style="color:#ED2626" class="icon ion-ios7-heart"></i>
         </button>
       </div>
-      <div style="text-align:center;" class="col">
+      <div class="col center">
         <button ng-click="togglePlay()" class="button button-outline button-balance">
           <i  ng-show="isPlaying==false" class="icon ion-ios7-play"></i>
           <i  ng-show="isPlaying==true" class="icon ion-ios7-pause"></i>
         </button>
       </div>
-      <div style="text-align:right;" class="col"><button class="button button-outline button-balance"><i class="icon ion-ios7-skipforward"></i></button></div>
+      <div class="col center"><button class="button button-outline button-balance" ng-click="share()"><i class="icon ion-android-share"></i></button></div>
     </div>
-    <div ng-repeat="user in onlineusers">
-      <div ng-class="{'item': true, 'item-avatar': true, 
-      'sounded': user.sounded}">
-          <img ng-src="{{user.avatar}}">
+    <div ng-repeat="user in users" class="list custom-list">
+      <a class="item item-avatar">
+            <img ng-src="{{user.avatar}}">
           <h2>{{user.name}}</h2>
-          <p>{{user.instrument.name}} </p>
-          <div class="icon-music" style="background: url('img/{{user.instrument.image}}'); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 40px; width: 40px; background-color: #fff; border-radius:50%; box-shadow: 0px 5px 10px rgba(0,0,0,.4); position: absolute; right: 15px; top: 15px">
-          </div>
-      </div>
+      </a>
     </div>
   </ion-content>
 </ion-view>
