@@ -564,6 +564,10 @@ angular.module('inklusik.controllers', [])
       }
     }
   }
+  $scope.$on('$destroy', function() {
+    $interval.cancel(timer);
+    timer = undefined;    
+  });
 })
 
 .controller('StreamListCtrl', function($scope, fbutil) {
