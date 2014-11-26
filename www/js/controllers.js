@@ -47,13 +47,16 @@ angular.module('inklusik.controllers', [])
     if (melody && $scope.profile) {
       if ($scope.profile.uid != melody.uid) {
         Player(melody.name, melody.location, melody.melody);
+        if ($scope.isRecording) {
+          $scope.activeRec.push({melody: melody.melody, name: melody.name, uid: melody.uid, user: melody.user, time: $scope.time, location: melody.location});
+        }
       }
     }
   });
   $scope.playSound = function(melody) {
     $scope.selected = melody;
     Player(name, $scope.instrument.location, melody);
-    $scope.harmony.$add({melody: melody, name: name, location: $scope.instrument.location, uid: $scope.profile.uid});
+    $scope.harmony.$add({melody: melody, name: name, location: $scope.instrument.location, uid: $scope.profile.uid, user: $scope.profile});
     //record
     if ($scope.isRecording) {
       $scope.activeRec.push({melody: melody, name: name, uid: $scope.profile.uid, user: $scope.profile, time: $scope.time, location: $scope.instrument.location});
